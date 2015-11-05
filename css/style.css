@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,400italic,700,700italic,300italic);
+/************************************************************CSS RESETS START*************************************************/
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:0 0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+/************************************************************MAIN RESETS START*************************************************/
+body{font-family: 'Roboto Condensed', sans-serif;font-weight:300;}
+section{clear:both;}
+a{text-decoration:none;}
+a:hover,a:focus{text-decoration:none;color:#f57a20;}
+p{line-height:1.5;color:#2d2e32;font-size:14px;}
+header{background-color:#fff;}
+.minicart a img{vertical-align:middle;height:18px;}
+/* Main Menu */
+
+/* home Slider */
+.homeslidercontainer{padding:0;}
+.owl-theme .owl-controls{margin-top:-40px;text-align:left;position:relative;z-index:500;margin-left:30px;margin-bottom:10px;}
+.owl-theme .owl-dots .owl-dot span{border-radius:0;width:10px;height:10px;background-color:#909090;margin:4px 2px;}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background-color:#f57a20;}
+.promotionslider{padding:0;}
+
+.fullheight{height:100% !important;max-height:100% !important;}
+.relative{position:relative;}
+.paddingzero{padding:0 !important;}
+.paddingzeroR{padding-right:0 !important;}
+.paddingzeroL{padding-left:0 !important;}
+.padding1{padding:15px 5px;}
+.padding2{padding:15px 15px;}
+.margin1{margin-right:-15px;}
+.tablet,.smartphones{display:none;}
+.desktop{display:block;}
