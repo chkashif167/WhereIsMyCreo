@@ -140,7 +140,8 @@
 	<button type="button" class="btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
 </div>
 <script>
-
+$('#gift').click(function() { $(".gift-form").show(); });
+$('#mine').click(function() { $(".gift-form").hide(); });
 </script>
 <footer class="site-footer">
 <?php include 'includes/footer.php'; ?>
