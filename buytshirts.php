@@ -10,7 +10,7 @@
 <?php //include 'includes/banner1.php'; ?>
 </header><!-- /header -->
 
-<div class="container mycart">
+<form class="container mycart">
 	<div class="clearfix active">
 	<h2>THIS AWESOME T-SHIRT</h2>
 	<div class="col-sm-6">
@@ -20,7 +20,7 @@
 		<label class="showhide"><input type="radio" name="giftmine" value="" placeholder="" data-id="gift-form"> IS A GIFT</label>
 	</div>
 	<div class="gift-form" style="display:none;" id="gift-form" >
-	<form class="form-horizontal" action="" method="">
+	<div class="form-horizontal" action="" method="">
 	  <div class="form-group">
 	      <input type="text" class="form-control" name="giftreceiver" placeholder="TYPE GIFT-GETTER’S NAME" required>
 	  </div>
@@ -31,7 +31,10 @@
 	  <div class="form-group">
 	      <textarea name="message" rows="10" class="form-control" placeholder="SEND A PERSONALIZED MESSAGE"></textarea>
 	  </div>
-	</form>
+	</div>
+	</div>
+	<div id="mine">
+	<p> This is mine </p>
 	</div>
 	</div>
 
@@ -140,7 +143,7 @@
 	</div>
 	</div>
 	<button type="button" class="btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
-</div>
+</form>
 <script>
 $('.showhide').click(function() { var mine = $(this).children().attr("data-id"); 
 $("#"+mine).show();});
