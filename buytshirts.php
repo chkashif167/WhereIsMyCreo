@@ -14,10 +14,10 @@
 	<div class="clearfix active">
 	<h2>THIS AWESOME T-SHIRT</h2>
 	<div class="col-sm-6">
-		<label><input type="radio" name="giftmine" value="" placeholder=""> IS MIne</label>
+		<label><input type="radio" name="giftmine" value="" placeholder="" id="mine"> IS MIne</label>
 	</div>
 	<div class="col-sm-6">
-		<label><input type="radio" name="giftmine" value="" placeholder=""> IS A GIFT</label>
+		<label><input type="radio" name="giftmine" value="" placeholder="" id="gift"> IS A GIFT</label>
 	</div>
 	<div class="gift-form" style="display:none;">
 	<form class="form-horizontal" action="" method="">
@@ -139,9 +139,12 @@
 	</div>
 	<button type="button" class="btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
 </div>
+<script>
 
+</script>
 <footer class="site-footer">
 <?php include 'includes/footer.php'; ?>
 </footer>
 </body>
+
 </html>
