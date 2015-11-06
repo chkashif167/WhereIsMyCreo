@@ -7,20 +7,20 @@
 <body>
 <header id="header" class="header">
 <?php include 'includes/header.php'; ?>
-<?php include 'includes/banner1.php'; ?>
+<?php //include 'includes/banner1.php'; ?>
 </header><!-- /header -->
 
-<div class="container mycart">
+<form class="container mycart">
 	<div class="clearfix active">
 	<h2>THIS AWESOME T-SHIRT</h2>
 	<div class="col-sm-6">
-		<label><input type="radio" name="giftmine" value="" placeholder=""> IS MIne</label>
+		<label class="showhide"><input type="radio" name="giftmine" value="" placeholder="" data-id="mine"> IS MIne</label>
 	</div>
 	<div class="col-sm-6">
-		<label><input type="radio" name="giftmine" value="" placeholder=""> IS A GIFT</label>
+		<label class="showhide"><input type="radio" name="giftmine" value="" placeholder="" data-id="gift-form"> IS A GIFT</label>
 	</div>
-	<div class="gift-form" style="display:none;">
-	<form class="form-horizontal" action="" method="">
+	<div class="gift-form" style="display:none;" id="gift-form" >
+	<div class="form-horizontal" action="" method="">
 	  <div class="form-group">
 	      <input type="text" class="form-control" name="giftreceiver" placeholder="TYPE GIFT-GETTER’S NAME" required>
 	  </div>
@@ -31,20 +31,24 @@
 	  <div class="form-group">
 	      <textarea name="message" rows="10" class="form-control" placeholder="SEND A PERSONALIZED MESSAGE"></textarea>
 	  </div>
-	</form>
+	</div>
+	</div>
+	<div id="mine">
+	<p> This is mine </p>
 	</div>
 	</div>
 
 	<div class="clearfix disabled">
 	<h2>IT’S FOR A</h2>
 	<div class="col-sm-6">
-		<label><input type="radio" name="gender" value="" placeholder=""> Man</label>
+		<label class="showhide"><input type="radio" name="gender" value="" placeholder="" > Man</label>
 	</div>
 	<div class="col-sm-6">
-		<label><input type="radio" name="gender" value="" placeholder=""> Women</label>
+		<label class="showhide"><input type="radio" name="gender" value="" placeholder="" data-id="women"> Women</label>
 	</div>
-
-	<div class="size" style="display:none;">
+    
+    <div class="women" id="women" style="display:none;">
+	<div class="size">
 		<h2>Give Me</h2>
 		<h2>SHE WEARS A</h2>
 		<label><input type="radio" name="size" value="" placeholder=""> S</label>
@@ -53,7 +57,7 @@
 		<label><input type="radio" name="size" value="" placeholder="">XL</label>
 	</div>
 
-	<div class="shirttypes" style="display:none;">
+	<div class="shirttypes">
 		<h2>Make it A</h2>
 		<h2>SHE LIKes</h2>
 		<label><input type="radio" name="shirttypes" value="" placeholder=""> Round neck</label>
@@ -62,7 +66,7 @@
 		<label><input type="radio" name="shirttypes" value="" placeholder="">you choose for me</label>
 	</div>
 
-	<div class="favcolor" style="display:none;">
+	<div class="favcolor">
 		<h2>my favorite color is...</h2>
 		<h2>her favorite color is...</h2>
 		<label class="white"><input type="radio" name="favcolor" value="white"> </label>
@@ -78,7 +82,7 @@
 	<button type="button" class="btn-blind">im color blind</button>
 	</div>
 
-	<div class="favMovie" style="display:none;">
+	<div class="favMovie">
 		<h2>My Favorite Movie</h2>
 		<h2>Her Favorite Movie</h2>
 		<label><input type="radio" name="favMovie" value=""> <span>Troy</span></label>
@@ -97,7 +101,8 @@
 		<label><input type="radio" name="favSinger" value=""> <span>Amir Diab</span></label>
 		<label><input type="radio" name="favSinger" value=""> <span>Adel</span></label>
 	</div>
-
+    
+    </div>
 	</div>
 
 	<div class="clearfix disabled">
@@ -138,10 +143,15 @@
 	</div>
 	</div>
 	<button type="button" class="btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
-</div>
-
+</form>
+<script>
+$('.showhide').click(function() { var mine = $(this).children().attr("data-id"); 
+$("#"+mine).show();});
+//$('#mine').click(function() { $(".gift-form").hide(); });
+</script>
 <footer class="site-footer">
 <?php include 'includes/footer.php'; ?>
 </footer>
 </body>
+
 </html>
