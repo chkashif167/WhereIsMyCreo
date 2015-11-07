@@ -40,7 +40,7 @@ $giftwrapping = $_POST["giftwrapping"];
 <header id="header" class="header">
 <?php include 'includes/header.php'; ?>
 </header><!-- /header -->
-<div class="big-heading" align="center"><h1>My Cart</h1></div>
+<div class="big-heading bgc1" align="center"><h1>My Cart</h1></div>
 <div class="container cartpage">
 <h3>Cool Things you picked</h3>
 <table class="cart-table" width="100%">
