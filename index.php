@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php include 'includes/header-top.php'; ?>
 <title>Where Is My Creo</title>
 <link rel="stylesheet" href="css/owl.carousel.css">
+<?php include 'includes/header-top.php'; ?>
 </head>
 <body>
 <header id="header" class="header">
@@ -14,12 +14,15 @@
 
 <div class="container-fluid">
 <div class="row">
-	<div class="slider"><img src="images/slide1.jpg" class="img-responsive"></div>
-	<div class="col-sm-8 hdit">
+	<div class="slider">
+	<img src="images/slide1.jpg" class="img-responsive">
+	<img src="images/slide1.jpg" class="img-responsive">
+	</div>
+	<div class="col-sm-8 dark-banner hdit">
 		<div class="dark-overlay"><b>Subscribe to an anonymously awesome t-shirt delivered to your doorstep, only for AED 80/month. Pssst. You’re going to love it. Every month.</b></div>
 		<a href="#" class="btn1">how does it work</a>
 	</div>
-	<div class="col-sm-4 atgof">
+	<div class="col-sm-4 dark-banner atgof">
 		<div class="dark-overlay"><b>The only thing more fun than giving is getting. So here’s to that one day of every month when the bell rings, you open the door smiling cheek-to-cheek and remember the glorious day you subscribed yourself to happiness in a box.</b></div>
 		<a href="#" class="btn1">AH! THE GIFT OF GIVING</a>
 	</div>
