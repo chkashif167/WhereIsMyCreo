@@ -118,10 +118,10 @@
 	</div>
 
 	<div class="payOnce" style="display:none;" id="payOnce">
-		<label><input type="radio" name="payOnce" value="package2" class="payOnce"> 3 Month<b>Save 4%</b></label>
-		<label><input type="radio" name="payOnce" value="package2" class="payOnce"> 6 Month<b>Save 8%</b></label>
-		<label><input type="radio" name="payOnce" value="package3" class="payOnce"> 9 Month<b>Save 11%</b></label>
-		<label><input type="radio" name="payOnce" value="package4" class="payOnce"> 1 year<b>Save 15%</b></label>
+		<label><input type="radio" name="payOnce" value="4" class="payOnce"> 3 Month<b>Save 4%</b></label>
+		<label><input type="radio" name="payOnce" value="8" class="payOnce"> 6 Month<b>Save 8%</b></label>
+		<label><input type="radio" name="payOnce" value="11" class="payOnce"> 9 Month<b>Save 11%</b></label>
+		<label><input type="radio" name="payOnce" value="15" class="payOnce"> 1 year<b>Save 15%</b></label>
         <div class="payonce-error" style="display:none;"><p>Please select one of the option</p></div>	
 	</div>
 
@@ -195,18 +195,33 @@ if(!$("input[name='size']:checked").val() || !$("input[name='shirttypes']:checke
      if (!$("input[name='size']:checked").val()) {
     		$(".size-error").show();
     	}
+    else{
+    	$(".size-error").hide();
+    }
     if (!$("input[name='shirttypes']:checked").val() ) {
     		$(".shirttypes-error").show();
     	}
+    else{
+    	$(".shirttypes-error").hide();
+    }
     if (!$("input[name='favcolor']:checked").val() ) {
     		$(".favcolor-error").show();
     	}
+    else{
+    	$(".favcolor-error").hide();
+    }
      if (!$("input[name='favSinger']:checked").val() ) {
         	$(".favSinger-error").show();
     	}
+    else{
+    	$(".favSinger-error").hide();
+    }
      if (!$("input[name='favMovie']:checked").val() ) {
     		$(".favMovie-error").show();
     	}
+    else{
+    	$(".favMovie-error").hide();
+    }
         $("#women").show();
      }
     if($('.payonce').is(':checked')){
@@ -214,6 +229,9 @@ if(!$("input[name='size']:checked").val() || !$("input[name='shirttypes']:checke
     	if (!$("input[name='payOnce']:checked").val() ) {
     		$(".payonce-error").show();
     	}
+    else{
+    	$(".payonce-error").hide();
+    }
     $(".payOnce").show();
     }
     if($('.paymonthly').is(':checked')){
@@ -221,6 +239,9 @@ if(!$("input[name='size']:checked").val() || !$("input[name='shirttypes']:checke
        if (!$("input[name='payOnce']:checked").val() ) {
     		$(".paymonthly-error").show();
     	}
+    else{
+    	$(".paymonthly-error").hide();
+    }
     	$(".payMonthly").show(); 
     }
 }
