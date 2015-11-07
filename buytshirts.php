@@ -14,10 +14,10 @@
 	<div class="clearfix active">
 	<h2>THIS AWESOME T-SHIRT</h2>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="giftmine" value="mine" placeholder="" data-id="mine" checked="checked"> IS MIne</label>
+		<label class="showhide"><input type="radio" name="giftmine" value="mine" placeholder="" data-id="mine" checked="checked" class="mine"> IS MIne</label>
 	</div>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="giftmine" value="gift" placeholder="" data-id="gift-form"> IS A GIFT</label>
+		<label class="showhide"><input type="radio" name="giftmine" value="gift" placeholder="" data-id="gift-form" class="gift"> IS A GIFT</label>
 	</div>
 	<div class="gift-form" style="display:none;" id="gift-form" >
 	<div class="form-horizontal" action="" method="">
@@ -46,8 +46,8 @@
     
     <div class="women" id="women" style="display:none;">
 	<div class="size">
-		<h2>Give Me</h2>
-		<h2>SHE WEARS A</h2>
+		<h2 class="first">Give Me</h2>
+		<!-- <h2>HE WEARS A</h2> -->
 		<label><input type="radio" name="size" value="small" placeholder="" class="size"> S</label>
 		<label><input type="radio" name="size" value="medium" placeholder="" class="size"> M</label>
 		<label><input type="radio" name="size" value="large" placeholder="" class="size"> L</label>
@@ -56,8 +56,8 @@
 	</div>
 
 	<div class="shirttypes">
-		<h2>Make it A</h2>
-		<h2>SHE LIKes</h2>
+		<h2 class="second">Make it A</h2>
+		<!-- <h2>SHE LIKes</h2> -->
 		<label><input type="radio" name="shirttypes" value="round neck" placeholder="" class="shirttypes"> Round neck</label>
 		<label><input type="radio" name="shirttypes" value="v neck" placeholder="" class="shirttypes"> V neck</label>
 		<label><input type="radio" name="shirttypes" value="tank top" placeholder="" class="shirttypes"> tank top</label>
@@ -66,8 +66,8 @@
 	</div>
 
 	<div class="favcolor">
-		<h2>my favorite color is...</h2>
-		<h2>her favorite color is...</h2>
+		<h2 class="third">my favorite color is...</h2>
+		<!-- <h2>her favorite color is...</h2> -->
 		<label class="white"><input type="radio" name="favcolor" value="white" class="favcolor"> </label>
 		<label class="black"><input type="radio" name="favcolor" value="black" class="favcolor"> </label>
 		<label class="lightblue"><input type="radio" name="favcolor" value="lightblue" class="favcolor"> </label>
@@ -83,8 +83,8 @@
 	</div>
 
 	<div class="favMovie">
-		<h2>My Favorite Movie</h2>
-		<h2>Her Favorite Movie</h2>
+		<h2 class="fourth">My Favorite Movie</h2>
+		<!-- <h2>Her Favorite Movie</h2> -->
 		<label><input type="radio" name="favMovie" value="troy" class="favMovie" > <span>Troy</span></label>
 		<label><input type="radio" name="favMovie" value="godfather" class="favMovie" > <span>The GodFather</span></label>
 		<label><input type="radio" name="favMovie" value="star wars" class="favMovie" > <span>Star wars</span></label>
@@ -94,8 +94,8 @@
 	</div>
 
 	<div class="favSinger">
-		<h2>My Favorite Singer</h2>
-		<h2>Her Favorite Singer</h2>
+		<h2 class="fifth">My Favorite Singer</h2>
+		<!-- <h2>Her Favorite Singer</h2> -->
 		<label><input type="radio" name="favSinger" value="kety perry" class="favSinger" > <span>Kety Perry</span></label>
 		<label><input type="radio" name="favSinger" value="2Pac" class="favSinger"> <span>2Pac</span></label>
 		<label><input type="radio" name="favSinger" value="Beyonce" class="favSinger"> <span>Beyonce</span></label>
@@ -185,7 +185,30 @@ $("#"+mine).show();
  $("#payOnce").hide();
  $(".payOnce").prop("checked",false);
 }
+if($('.gift').is(':checked') && $('.women').is(':checked')){
+	//alert("hello")
+   $(".first").text("She wears a..");
+   $(".second").text("She Likes..");
+   $(".third").text("Her Favorite color is..");
+   $(".fourth").text("Her Favorite singer is..");
+   $(".fifth").text("Her Favorite movie is..");
+}
+if($('.gift').is(':checked') && $('.men').is(':checked')){
+   $(".first").text("He wears a..");
+   $(".second").text("He Likes..");
+   $(".third").text("His Favorite color is..");
+   $(".fourth").text("His Favorite singer is..");
+   $(".fifth").text("His Favorite movie is..");
+}
+if($('.mine').is(':checked') && $('.women').is(':checked') || $('.mine').is(':checked') && $('.men').is(':checked')){
+   $(".first").text("Give me");
+   $(".second").text("Make it a");
+   $(".third").text("My Favorite color is..");
+   $(".fourth").text("My Favorite singer is..");
+   $(".fifth").text("My Favorite movie is..");
+}
 });
+
 
 $('.btn-checkout-big').click(function() { 
 if(!$("input[name='size']:checked").val() || !$("input[name='shirttypes']:checked").val() ||
