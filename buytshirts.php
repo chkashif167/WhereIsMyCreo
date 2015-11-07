@@ -52,7 +52,7 @@
 		<label><input type="radio" name="size" value="medium" placeholder="" class="size"> M</label>
 		<label><input type="radio" name="size" value="large" placeholder="" class="size"> L</label>
 		<label><input type="radio" name="size" value="xlarge" placeholder="" class="size">XL</label>
-	    <div class="size-error"><p>Please select one of the option</p></div>
+	    <div class="size-error" style="display:none;"><p>Please select one of the option</p></div>
 	</div>
 
 	<div class="shirttypes">
@@ -62,7 +62,7 @@
 		<label><input type="radio" name="shirttypes" value="v neck" placeholder="" class="shirttypes"> V neck</label>
 		<label><input type="radio" name="shirttypes" value="tank top" placeholder="" class="shirttypes"> tank top</label>
 		<label><input type="radio" name="shirttypes" value="choose for me" placeholder="" class="shirttypes">you choose for me</label>
-	    <div class="shirttypes-error"><p>Please select one of the option</p></div>
+	    <div class="shirttypes-error" style="display:none;"><p>Please select one of the option</p></div>
 	</div>
 
 	<div class="favcolor">
@@ -78,7 +78,7 @@
 		<label class="lightgreen"><input type="radio" name="favcolor" value="lightgreen" class="favcolor"> </label>
 		<label class="yellow"><input type="radio" name="favcolor" value="yellow" class="favcolor"> </label>
 		<label class="blue"><input type="radio" name="favcolor" value="blue" class="favcolor"> </label>
-	    <div class="favcolor-error"><p>Please select one of the option</p></div>
+	    <div class="favcolor-error" style="display:none;"><p>Please select one of the option</p></div>
 	<button type="button" class="btn-blind">im color blind</button>
 	</div>
 
@@ -90,10 +90,10 @@
 		<label><input type="radio" name="favMovie" value="star wars" class="favMovie" > <span>Star wars</span></label>
 		<label><input type="radio" name="favMovie" value="godfather again" class="favMovie" > <span>The GodFather Again</span></label>
 		<label><input type="radio" name="favMovie" value="dispicable me" class="favMovie" > <span>Dispicable Me</span></label>
-	    <div class="favMovie-error"><p>Please select one of the option</p></div>
+	    <div class="favMovie-error" style="display:none;"><p>Please select one of the option</p></div>
 	</div>
 
-	<div class="favSinger" style="display:none;">
+	<div class="favSinger">
 		<h2>My Favorite Singer</h2>
 		<h2>Her Favorite Singer</h2>
 		<label><input type="radio" name="favSinger" value="kety perry" class="favSinger" > <span>Kety Perry</span></label>
@@ -101,7 +101,7 @@
 		<label><input type="radio" name="favSinger" value="Beyonce" class="favSinger"> <span>Beyonce</span></label>
 		<label><input type="radio" name="favSinger" value="Amir Diab" class="favSinger"> <span>Amir Diab</span></label>
 		<label><input type="radio" name="favSinger" value="Adel" class="favSinger"> <span>Adel</span></label>
-	    <div class="favSinger-error"><p>Please select one of the option</p></div>
+	    <div class="favSinger-error" style="display:none;"><p>Please select one of the option</p></div>
 	</div>
     
     </div>
@@ -111,26 +111,29 @@
 	<h2>I want to pay</h2>
 	<h2>How Often you wana pay?</h2>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="paytype" value="once" data-id="payOnce" checked="checked"> Once</label>
+		<label class="showhide"><input type="radio" name="paytype" value="once" data-id="payOnce" checked="checked" class="payonce"> Once</label>
 	</div>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="paytype" value="monthly" data-id="payMonthly"> Monthly</label>
+		<label class="showhide"><input type="radio" name="paytype" value="monthly" data-id="payMonthly" class="paymonthly"> Monthly</label>
 	</div>
 
 	<div class="payOnce" style="display:none;" id="payOnce">
-		<label><input type="radio" name="payOnce" value="" class="payOnce"> 3 Month<b>Save 4%</b></label>
+		<label><input type="radio" name="payOnce" value="package2" class="payOnce"> 3 Month<b>Save 4%</b></label>
 		<label><input type="radio" name="payOnce" value="package2" class="payOnce"> 6 Month<b>Save 8%</b></label>
 		<label><input type="radio" name="payOnce" value="package3" class="payOnce"> 9 Month<b>Save 11%</b></label>
 		<label><input type="radio" name="payOnce" value="package4" class="payOnce"> 1 year<b>Save 15%</b></label>
+        <div class="payonce-error" style="display:none;"><p>Please select one of the option</p></div>	
 	</div>
 
 	<div class="payMonthly" style="display:none;" id="payMonthly">
 		<h2>how many t-shirt per month you want?</h2>
-		<label><input type="radio" name="payMonthly" value="89" class="payMonthly"> 1 t-shirt <b>89 AED</b>a month</label>
-		<label><input type="radio" name="payMonthly" value="82" class="payMonthly"> 2 t-shirts <b>82 AED per T-shirt</b>a month 
+		<label><input type="radio" name="payOnce" value="89" class="payMonthly"> 1 t-shirt <b>89 AED</b>a month</label>
+		<label><input type="radio" name="payOnce" value="82" class="payMonthly"> 2 t-shirts <b>82 AED per T-shirt</b>a month 
 		<span>save 14 AED</span></label>
-		<label><input type="radio" name="payMonthly" value="85" class="payMonthly"> 3 t-shirts <b>85 AED per t-shirt</b>a month 
+		<label><input type="radio" name="payOnce" value="85" class="payMonthly"> 3 t-shirts <b>85 AED per t-shirt</b>a month 
 		<span>save 14 AED</span></label>
+	    <div class="paymonthly-error" style="display:none;"><p>Please select one of the option</p></div>	
+
 	</div>
 
 	</div>
@@ -157,10 +160,15 @@ $("#gift-form").hide();
 $(".form-control").val("");
 }
 else if(mine == "women"){
-  $("#"+mine).show();	
+$("#"+mine).show();
+$(".size").prop("checked",false);
+$(".shirttypes").prop("checked",false);
+$(".favcolor").prop("checked",false);
+$(".favSinger").prop("checked",false);
+$(".favMovie").prop("checked",false);	
 }
 else if(mine == "man"){
-$("#women").hide();
+$("#women").show();
 $(".size").prop("checked",false);
 $(".shirttypes").prop("checked",false);
 $(".favcolor").prop("checked",false);
@@ -180,8 +188,11 @@ $("#"+mine).show();
 });
 
 $('.btn-checkout-big').click(function() { 
-    if($('.women').is(':checked')){
-     if (!$("input[name='size']:checked").val() ) {
+if(!$("input[name='size']:checked").val() || !$("input[name='shirttypes']:checked").val() ||
+   !$("input[name='favcolor']:checked").val() || !$("input[name='favSinger']:checked").val() ||
+   !$("input[name='favMovie']:checked").val() || !$("input[name='payOnce']:checked").val()){
+    if($('.women').is(':checked') || $('.men').is(':checked') ){
+     if (!$("input[name='size']:checked").val()) {
     		$(".size-error").show();
     	}
     if (!$("input[name='shirttypes']:checked").val() ) {
@@ -190,10 +201,33 @@ $('.btn-checkout-big').click(function() {
     if (!$("input[name='favcolor']:checked").val() ) {
     		$(".favcolor-error").show();
     	}
+     if (!$("input[name='favSinger']:checked").val() ) {
+        	$(".favSinger-error").show();
+    	}
+     if (!$("input[name='favMovie']:checked").val() ) {
+    		$(".favMovie-error").show();
+    	}
+        $("#women").show();
+     }
+    if($('.payonce').is(':checked')){
 
-
+    	if (!$("input[name='payOnce']:checked").val() ) {
+    		$(".payonce-error").show();
+    	}
+    $(".payOnce").show();
     }
-	$("#myForm").submit();
+    if($('.paymonthly').is(':checked')){
+
+       if (!$("input[name='payOnce']:checked").val() ) {
+    		$(".paymonthly-error").show();
+    	}
+    	$(".payMonthly").show(); 
+    }
+}
+else {
+	 	
+	 $("#myForm").submit();
+	 }
 });
 
 </script>
