@@ -38,7 +38,7 @@
 	<div class="clearfix disabled">
 	<h2>IT’S FOR A</h2>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="gender" value="man" placeholder="" > Man</label>
+		<label class="showhide"><input type="radio" name="gender" value="man" placeholder="" data-id="man" > Man</label>
 	</div>
 	<div class="col-sm-6">
 		<label class="showhide"><input type="radio" name="gender" value="woman" placeholder="" data-id="women"> Women</label>
@@ -48,55 +48,55 @@
 	<div class="size">
 		<h2>Give Me</h2>
 		<h2>SHE WEARS A</h2>
-		<label><input type="radio" name="size" value="small" placeholder=""> S</label>
-		<label><input type="radio" name="size" value="medium" placeholder=""> M</label>
-		<label><input type="radio" name="size" value="large" placeholder=""> L</label>
-		<label><input type="radio" name="size" value="xlarge" placeholder="">XL</label>
+		<label><input type="radio" name="size" value="small" placeholder="" class="size"> S</label>
+		<label><input type="radio" name="size" value="medium" placeholder="" class="size"> M</label>
+		<label><input type="radio" name="size" value="large" placeholder="" class="size"> L</label>
+		<label><input type="radio" name="size" value="xlarge" placeholder="" class="size">XL</label>
 	</div>
 
 	<div class="shirttypes">
 		<h2>Make it A</h2>
 		<h2>SHE LIKes</h2>
-		<label><input type="radio" name="shirttypes" value="round neck" placeholder=""> Round neck</label>
-		<label><input type="radio" name="shirttypes" value="v neck" placeholder=""> V neck</label>
-		<label><input type="radio" name="shirttypes" value="tank top" placeholder=""> tank top</label>
-		<label><input type="radio" name="shirttypes" value="choose for me" placeholder="">you choose for me</label>
+		<label><input type="radio" name="shirttypes" value="round neck" placeholder="" class="shirttypes"> Round neck</label>
+		<label><input type="radio" name="shirttypes" value="v neck" placeholder="" class="shirttypes"> V neck</label>
+		<label><input type="radio" name="shirttypes" value="tank top" placeholder="" class="shirttypes"> tank top</label>
+		<label><input type="radio" name="shirttypes" value="choose for me" placeholder="" class="shirttypes">you choose for me</label>
 	</div>
 
 	<div class="favcolor">
 		<h2>my favorite color is...</h2>
 		<h2>her favorite color is...</h2>
-		<label class="white"><input type="radio" name="favcolor" value="white"> </label>
-		<label class="black"><input type="radio" name="favcolor" value="black"> </label>
-		<label class="lightblue"><input type="radio" name="favcolor" value="lightblue"> </label>
-		<label class="darkblue"><input type="radio" name="favcolor" value="darkblue"> </label>
-		<label class="red"><input type="radio" name="favcolor" value="red"> </label>
-		<label class="green"><input type="radio" name="favcolor" value="green"> </label>
-		<label class="orange"><input type="radio" name="favcolor" value="orange"> </label>
-		<label class="lightgreen"><input type="radio" name="favcolor" value="lightgreen"> </label>
-		<label class="yellow"><input type="radio" name="favcolor" value="yellow"> </label>
-		<label class="blue"><input type="radio" name="favcolor" value="blue"> </label>
+		<label class="white"><input type="radio" name="favcolor" value="white" class="favcolor"> </label>
+		<label class="black"><input type="radio" name="favcolor" value="black" class="favcolor"> </label>
+		<label class="lightblue"><input type="radio" name="favcolor" value="lightblue" class="favcolor"> </label>
+		<label class="darkblue"><input type="radio" name="favcolor" value="darkblue" class="favcolor"> </label>
+		<label class="red"><input type="radio" name="favcolor" value="red" class="favcolor"> </label>
+		<label class="green"><input type="radio" name="favcolor" value="green" class="favcolor"> </label>
+		<label class="orange"><input type="radio" name="favcolor" value="orange" class="favcolor"> </label>
+		<label class="lightgreen"><input type="radio" name="favcolor" value="lightgreen" class="favcolor"> </label>
+		<label class="yellow"><input type="radio" name="favcolor" value="yellow" class="favcolor"> </label>
+		<label class="blue"><input type="radio" name="favcolor" value="blue" class="favcolor"> </label>
 	<button type="button" class="btn-blind">im color blind</button>
 	</div>
 
 	<div class="favMovie">
 		<h2>My Favorite Movie</h2>
 		<h2>Her Favorite Movie</h2>
-		<label><input type="radio" name="favMovie" value="troy"> <span>Troy</span></label>
-		<label><input type="radio" name="favMovie" value="godfather"> <span>The GodFather</span></label>
-		<label><input type="radio" name="favMovie" value="star wars"> <span>Star wars</span></label>
-		<label><input type="radio" name="favMovie" value="godfather again"> <span>The GodFather Again</span></label>
-		<label><input type="radio" name="favMovie" value="dispicable me"> <span>Dispicable Me</span></label>
+		<label><input type="radio" name="favMovie" value="troy" class="favMovie" > <span>Troy</span></label>
+		<label><input type="radio" name="favMovie" value="godfather" class="favMovie" > <span>The GodFather</span></label>
+		<label><input type="radio" name="favMovie" value="star wars" class="favMovie" > <span>Star wars</span></label>
+		<label><input type="radio" name="favMovie" value="godfather again" class="favMovie" > <span>The GodFather Again</span></label>
+		<label><input type="radio" name="favMovie" value="dispicable me" class="favMovie" > <span>Dispicable Me</span></label>
 	</div>
 
 	<div class="favSinger" style="display:none;">
 		<h2>My Favorite Singer</h2>
 		<h2>Her Favorite Singer</h2>
-		<label><input type="radio" name="favSinger" value="kety perry"> <span>Kety Perry</span></label>
-		<label><input type="radio" name="favSinger" value="2Pac"> <span>2Pac</span></label>
-		<label><input type="radio" name="favSinger" value="Beyonce"> <span>Beyonce</span></label>
-		<label><input type="radio" name="favSinger" value="Amir Diab"> <span>Amir Diab</span></label>
-		<label><input type="radio" name="favSinger" value="Adel"> <span>Adel</span></label>
+		<label><input type="radio" name="favSinger" value="kety perry" class="favSinger" > <span>Kety Perry</span></label>
+		<label><input type="radio" name="favSinger" value="2Pac" class="favSinger"> <span>2Pac</span></label>
+		<label><input type="radio" name="favSinger" value="Beyonce" class="favSinger"> <span>Beyonce</span></label>
+		<label><input type="radio" name="favSinger" value="Amir Diab" class="favSinger"> <span>Amir Diab</span></label>
+		<label><input type="radio" name="favSinger" value="Adel" class="favSinger"> <span>Adel</span></label>
 	</div>
     
     </div>
@@ -112,19 +112,19 @@
 		<label class="showhide"><input type="radio" name="paytype" value="monthly" data-id="payMonthly"> Monthly</label>
 	</div>
 
-	<div class="payOnce" style="display:none;">
-		<label><input type="radio" name="payOnce" value="package1"> 3 Month<b>Save 4%</b></label>
-		<label><input type="radio" name="payOnce" value="package2"> 6 Month<b>Save 8%</b></label>
-		<label><input type="radio" name="payOnce" value="package3"> 9 Month<b>Save 11%</b></label>
-		<label><input type="radio" name="payOnce" value="package4"> 1 year<b>Save 15%</b></label>
+	<div class="payOnce" style="display:none;" id="payOnce">
+		<label><input type="radio" name="payOnce" value="package1" class="payOnce"> 3 Month<b>Save 4%</b></label>
+		<label><input type="radio" name="payOnce" value="package2" class="payOnce"> 6 Month<b>Save 8%</b></label>
+		<label><input type="radio" name="payOnce" value="package3" class="payOnce"> 9 Month<b>Save 11%</b></label>
+		<label><input type="radio" name="payOnce" value="package4" class="payOnce"> 1 year<b>Save 15%</b></label>
 	</div>
 
-	<div class="payMonthly" style="display:none;">
+	<div class="payMonthly" style="display:none;" id="payMonthly">
 		<h2>how many t-shirt per month you want?</h2>
-		<label><input type="radio" name="payMonthly" value="package1"> 1 t-shirt <b>89 AED</b>a month</label>
-		<label><input type="radio" name="payMonthly" value="package2"> 2 t-shirts <b>82 AED per T-shirt</b>a month 
+		<label><input type="radio" name="payMonthly" value="package1" class="payMonthly"> 1 t-shirt <b>89 AED</b>a month</label>
+		<label><input type="radio" name="payMonthly" value="package2" class="payMonthly"> 2 t-shirts <b>82 AED per T-shirt</b>a month 
 		<span>save 14 AED</span></label>
-		<label><input type="radio" name="payMonthly" value="package3"> 3 t-shirts <b>85 AED per t-shirt</b>a month 
+		<label><input type="radio" name="payMonthly" value="package3" class="payMonthly"> 3 t-shirts <b>85 AED per t-shirt</b>a month 
 		<span>save 14 AED</span></label>
 	</div>
 
@@ -144,11 +144,37 @@
 <script>
 $('.showhide').click(function() { 
 var mine = $(this).children().attr("data-id"); 
+if(mine == "gift-form"){
 $("#"+mine).show();
+}
+else if(mine == "mine"){
+$("#gift-form").hide();
+$(".form-control").val("");
+}
+else if(mine == "women"){
+  $("#"+mine).show();	
+}
+else if(mine == "man"){
+$("#women").hide();
+$(".size").prop("checked",false);
+$(".shirttypes").prop("checked",false);
+$(".favcolor").prop("checked",false);
+$(".favSinger").prop("checked",false);
+$(".favMovie").prop("checked",false);
+}
+else if(mine == "payOnce"){
+$("#"+mine).show();
+$("#payMonthly").hide();
+$(".payMonthly").prop("checked",false);
+}
+else if(mine == "payMonthly"){
+$("#"+mine).show();
+ $("#payOnce").hide();
+ $(".payOnce").prop("checked",false);
+}
 });
 
 $('.btn-checkout-big').click(function() { 
-	alert("ghjgjh")
 	$("#myForm").submit();
 });
 
