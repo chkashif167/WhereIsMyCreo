@@ -4,14 +4,20 @@ $giftreceiver = $_POST["giftreceiver"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 $gender = $_POST["gender"];
+if($gender == "woman"){
 $size   = $_POST["size"];
 $shirttypes   = $_POST["shirttypes"];
 $favcolor   = $_POST["favcolor"];
 $favmovie   = $_POST["favMovie"];
 $favsinger = $_POST["favSinger"];
-$paytime = $_POST["paytime"];
+}
+$paytime = $_POST["paytype"];
+if($paytime == "once"){
 $payOnce = $_POST["payOnce"];
-$payMonthly = $_POST["payMonthly"];
+}
+if($paytime == "payMonthly"){
+$payMonthly = $_POST["monthly"];
+}
 $giftwrapping = $_POST["giftwrapping"];
 
 ?>

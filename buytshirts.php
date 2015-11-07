@@ -14,7 +14,7 @@
 	<div class="clearfix active">
 	<h2>THIS AWESOME T-SHIRT</h2>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="giftmine" value="mine" placeholder="" data-id="mine"> IS MIne</label>
+		<label class="showhide"><input type="radio" name="giftmine" value="mine" placeholder="" data-id="mine" checked="checked"> IS MIne</label>
 	</div>
 	<div class="col-sm-6">
 		<label class="showhide"><input type="radio" name="giftmine" value="gift" placeholder="" data-id="gift-form"> IS A GIFT</label>
@@ -38,10 +38,10 @@
 	<div class="clearfix disabled">
 	<h2>IT’S FOR A</h2>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="gender" value="man" placeholder="" data-id="man" > Man</label>
+		<label class="showhide"><input type="radio" name="gender" value="man" placeholder="" data-id="man" checked="checked" class="men"> Man</label>
 	</div>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="gender" value="woman" placeholder="" data-id="women"> Women</label>
+		<label class="showhide"><input type="radio" name="gender" value="woman" placeholder="" data-id="women" class ="women"> Women</label>
 	</div>
     
     <div class="women" id="women" style="display:none;">
@@ -52,6 +52,7 @@
 		<label><input type="radio" name="size" value="medium" placeholder="" class="size"> M</label>
 		<label><input type="radio" name="size" value="large" placeholder="" class="size"> L</label>
 		<label><input type="radio" name="size" value="xlarge" placeholder="" class="size">XL</label>
+	    <div class="size-error"><p>Please select one of the option</p></div>
 	</div>
 
 	<div class="shirttypes">
@@ -61,6 +62,7 @@
 		<label><input type="radio" name="shirttypes" value="v neck" placeholder="" class="shirttypes"> V neck</label>
 		<label><input type="radio" name="shirttypes" value="tank top" placeholder="" class="shirttypes"> tank top</label>
 		<label><input type="radio" name="shirttypes" value="choose for me" placeholder="" class="shirttypes">you choose for me</label>
+	    <div class="shirttypes-error"><p>Please select one of the option</p></div>
 	</div>
 
 	<div class="favcolor">
@@ -76,6 +78,7 @@
 		<label class="lightgreen"><input type="radio" name="favcolor" value="lightgreen" class="favcolor"> </label>
 		<label class="yellow"><input type="radio" name="favcolor" value="yellow" class="favcolor"> </label>
 		<label class="blue"><input type="radio" name="favcolor" value="blue" class="favcolor"> </label>
+	    <div class="favcolor-error"><p>Please select one of the option</p></div>
 	<button type="button" class="btn-blind">im color blind</button>
 	</div>
 
@@ -87,6 +90,7 @@
 		<label><input type="radio" name="favMovie" value="star wars" class="favMovie" > <span>Star wars</span></label>
 		<label><input type="radio" name="favMovie" value="godfather again" class="favMovie" > <span>The GodFather Again</span></label>
 		<label><input type="radio" name="favMovie" value="dispicable me" class="favMovie" > <span>Dispicable Me</span></label>
+	    <div class="favMovie-error"><p>Please select one of the option</p></div>
 	</div>
 
 	<div class="favSinger" style="display:none;">
@@ -97,6 +101,7 @@
 		<label><input type="radio" name="favSinger" value="Beyonce" class="favSinger"> <span>Beyonce</span></label>
 		<label><input type="radio" name="favSinger" value="Amir Diab" class="favSinger"> <span>Amir Diab</span></label>
 		<label><input type="radio" name="favSinger" value="Adel" class="favSinger"> <span>Adel</span></label>
+	    <div class="favSinger-error"><p>Please select one of the option</p></div>
 	</div>
     
     </div>
@@ -106,14 +111,14 @@
 	<h2>I want to pay</h2>
 	<h2>How Often you wana pay?</h2>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="paytype" value="once" data-id="payOnce"> Once</label>
+		<label class="showhide"><input type="radio" name="paytype" value="once" data-id="payOnce" checked="checked"> Once</label>
 	</div>
 	<div class="col-sm-6">
 		<label class="showhide"><input type="radio" name="paytype" value="monthly" data-id="payMonthly"> Monthly</label>
 	</div>
 
 	<div class="payOnce" style="display:none;" id="payOnce">
-		<label><input type="radio" name="payOnce" value="package1" class="payOnce"> 3 Month<b>Save 4%</b></label>
+		<label><input type="radio" name="payOnce" value="" class="payOnce"> 3 Month<b>Save 4%</b></label>
 		<label><input type="radio" name="payOnce" value="package2" class="payOnce"> 6 Month<b>Save 8%</b></label>
 		<label><input type="radio" name="payOnce" value="package3" class="payOnce"> 9 Month<b>Save 11%</b></label>
 		<label><input type="radio" name="payOnce" value="package4" class="payOnce"> 1 year<b>Save 15%</b></label>
@@ -121,10 +126,10 @@
 
 	<div class="payMonthly" style="display:none;" id="payMonthly">
 		<h2>how many t-shirt per month you want?</h2>
-		<label><input type="radio" name="payMonthly" value="package1" class="payMonthly"> 1 t-shirt <b>89 AED</b>a month</label>
-		<label><input type="radio" name="payMonthly" value="package2" class="payMonthly"> 2 t-shirts <b>82 AED per T-shirt</b>a month 
+		<label><input type="radio" name="payMonthly" value="89" class="payMonthly"> 1 t-shirt <b>89 AED</b>a month</label>
+		<label><input type="radio" name="payMonthly" value="82" class="payMonthly"> 2 t-shirts <b>82 AED per T-shirt</b>a month 
 		<span>save 14 AED</span></label>
-		<label><input type="radio" name="payMonthly" value="package3" class="payMonthly"> 3 t-shirts <b>85 AED per t-shirt</b>a month 
+		<label><input type="radio" name="payMonthly" value="85" class="payMonthly"> 3 t-shirts <b>85 AED per t-shirt</b>a month 
 		<span>save 14 AED</span></label>
 	</div>
 
@@ -136,7 +141,7 @@
 		<label><input type="radio" name="giftwrapping" value="noyes" placeholder=""> NAH!</label>
 	</div>
 	<div class="col-sm-6">
-		<label><input type="radio" name="giftwrapping" value="" placeholder=""> YA!</label>
+		<label><input type="radio" name="giftwrapping" value="" placeholder="" checked="checked"> YA!</label>
 	</div>
 	</div>
 	<button type="button" class="btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
@@ -175,6 +180,19 @@ $("#"+mine).show();
 });
 
 $('.btn-checkout-big').click(function() { 
+    if($('.women').is(':checked')){
+     if (!$("input[name='size']:checked").val() ) {
+    		$(".size-error").show();
+    	}
+    if (!$("input[name='shirttypes']:checked").val() ) {
+    		$(".shirttypes-error").show();
+    	}
+    if (!$("input[name='favcolor']:checked").val() ) {
+    		$(".favcolor-error").show();
+    	}
+
+
+    }
 	$("#myForm").submit();
 });
 
