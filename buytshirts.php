@@ -130,7 +130,7 @@
 		<label><input type="radio" name="payOnce" value="89" class="payMonthly"> 1 t-shirt <b>89 AED</b>a month</label>
 		<label><input type="radio" name="payOnce" value="82" class="payMonthly"> 2 t-shirts <b>82 AED per T-shirt</b>a month 
 		<span>save 14 AED</span></label>
-		<label><input type="radio" name="payOnce" value="85" class="payMonthly"> 3 t-shirts <b>85 AED per t-shirt</b>a month 
+		<label><input type="radio" name="payOnce" value="75" class="payMonthly"> 3 t-shirts <b>85 AED per t-shirt</b>a month 
 		<span>save 14 AED</span></label>
 	    <div class="paymonthly-error" style="display:none;"><p>Please select one of the option</p></div>	
 
