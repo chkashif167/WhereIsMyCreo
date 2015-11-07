@@ -10,14 +10,14 @@
 <?php //include 'includes/banner1.php'; ?>
 </header><!-- /header -->
 
-<form class="container mycart">
+<form class="container mycart" action="cart.php" method="Post" id="myForm">
 	<div class="clearfix active">
 	<h2>THIS AWESOME T-SHIRT</h2>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="giftmine" value="" placeholder="" data-id="mine"> IS MIne</label>
+		<label class="showhide"><input type="radio" name="giftmine" value="mine" placeholder="" data-id="mine"> IS MIne</label>
 	</div>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="giftmine" value="" placeholder="" data-id="gift-form"> IS A GIFT</label>
+		<label class="showhide"><input type="radio" name="giftmine" value="gift" placeholder="" data-id="gift-form"> IS A GIFT</label>
 	</div>
 	<div class="gift-form" style="display:none;" id="gift-form" >
 	<div class="form-horizontal" action="" method="">
@@ -33,37 +33,34 @@
 	  </div>
 	</div>
 	</div>
-	<div id="mine">
-	<p> This is mine </p>
-	</div>
 	</div>
 
 	<div class="clearfix disabled">
 	<h2>IT’S FOR A</h2>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="gender" value="" placeholder="" > Man</label>
+		<label class="showhide"><input type="radio" name="gender" value="man" placeholder="" > Man</label>
 	</div>
 	<div class="col-sm-6">
-		<label class="showhide"><input type="radio" name="gender" value="" placeholder="" data-id="women"> Women</label>
+		<label class="showhide"><input type="radio" name="gender" value="woman" placeholder="" data-id="women"> Women</label>
 	</div>
     
     <div class="women" id="women" style="display:none;">
 	<div class="size">
 		<h2>Give Me</h2>
 		<h2>SHE WEARS A</h2>
-		<label><input type="radio" name="size" value="" placeholder=""> S</label>
-		<label><input type="radio" name="size" value="" placeholder=""> M</label>
-		<label><input type="radio" name="size" value="" placeholder=""> L</label>
-		<label><input type="radio" name="size" value="" placeholder="">XL</label>
+		<label><input type="radio" name="size" value="small" placeholder=""> S</label>
+		<label><input type="radio" name="size" value="medium" placeholder=""> M</label>
+		<label><input type="radio" name="size" value="large" placeholder=""> L</label>
+		<label><input type="radio" name="size" value="xlarge" placeholder="">XL</label>
 	</div>
 
 	<div class="shirttypes">
 		<h2>Make it A</h2>
 		<h2>SHE LIKes</h2>
-		<label><input type="radio" name="shirttypes" value="" placeholder=""> Round neck</label>
-		<label><input type="radio" name="shirttypes" value="" placeholder=""> V neck</label>
-		<label><input type="radio" name="shirttypes" value="" placeholder=""> tank top</label>
-		<label><input type="radio" name="shirttypes" value="" placeholder="">you choose for me</label>
+		<label><input type="radio" name="shirttypes" value="round neck" placeholder=""> Round neck</label>
+		<label><input type="radio" name="shirttypes" value="v neck" placeholder=""> V neck</label>
+		<label><input type="radio" name="shirttypes" value="tank top" placeholder=""> tank top</label>
+		<label><input type="radio" name="shirttypes" value="choose for me" placeholder="">you choose for me</label>
 	</div>
 
 	<div class="favcolor">
@@ -85,21 +82,21 @@
 	<div class="favMovie">
 		<h2>My Favorite Movie</h2>
 		<h2>Her Favorite Movie</h2>
-		<label><input type="radio" name="favMovie" value=""> <span>Troy</span></label>
-		<label><input type="radio" name="favMovie" value=""> <span>The GodFather</span></label>
-		<label><input type="radio" name="favMovie" value=""> <span>Star wars</span></label>
-		<label><input type="radio" name="favMovie" value=""> <span>The GodFather Again</span></label>
-		<label><input type="radio" name="favMovie" value=""> <span>Dispicable Me</span></label>
+		<label><input type="radio" name="favMovie" value="troy"> <span>Troy</span></label>
+		<label><input type="radio" name="favMovie" value="godfather"> <span>The GodFather</span></label>
+		<label><input type="radio" name="favMovie" value="star wars"> <span>Star wars</span></label>
+		<label><input type="radio" name="favMovie" value="godfather again"> <span>The GodFather Again</span></label>
+		<label><input type="radio" name="favMovie" value="dispicable me"> <span>Dispicable Me</span></label>
 	</div>
 
 	<div class="favSinger" style="display:none;">
 		<h2>My Favorite Singer</h2>
 		<h2>Her Favorite Singer</h2>
-		<label><input type="radio" name="favSinger" value=""> <span>Kety Perry</span></label>
-		<label><input type="radio" name="favSinger" value=""> <span>2Pac</span></label>
-		<label><input type="radio" name="favSinger" value=""> <span>Beyonce</span></label>
-		<label><input type="radio" name="favSinger" value=""> <span>Amir Diab</span></label>
-		<label><input type="radio" name="favSinger" value=""> <span>Adel</span></label>
+		<label><input type="radio" name="favSinger" value="kety perry"> <span>Kety Perry</span></label>
+		<label><input type="radio" name="favSinger" value="2Pac"> <span>2Pac</span></label>
+		<label><input type="radio" name="favSinger" value="Beyonce"> <span>Beyonce</span></label>
+		<label><input type="radio" name="favSinger" value="Amir Diab"> <span>Amir Diab</span></label>
+		<label><input type="radio" name="favSinger" value="Adel"> <span>Adel</span></label>
 	</div>
     
     </div>
@@ -109,10 +106,10 @@
 	<h2>I want to pay</h2>
 	<h2>How Often you wana pay?</h2>
 	<div class="col-sm-6">
-		<label><input type="radio" name="paytype" value="once"> Once</label>
+		<label class="showhide"><input type="radio" name="paytype" value="once" data-id="payOnce"> Once</label>
 	</div>
 	<div class="col-sm-6">
-		<label><input type="radio" name="paytype" value="monthly"> Monthly</label>
+		<label class="showhide"><input type="radio" name="paytype" value="monthly" data-id="payMonthly"> Monthly</label>
 	</div>
 
 	<div class="payOnce" style="display:none;">
@@ -136,7 +133,7 @@
 	<div class="clearfix disabled">
 	<h2>GIFT WRAP IT?</h2>
 	<div class="col-sm-6">
-		<label><input type="radio" name="giftwrapping" value="" placeholder=""> NAH!</label>
+		<label><input type="radio" name="giftwrapping" value="noyes" placeholder=""> NAH!</label>
 	</div>
 	<div class="col-sm-6">
 		<label><input type="radio" name="giftwrapping" value="" placeholder=""> YA!</label>
@@ -145,9 +142,16 @@
 	<button type="button" class="btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
 </form>
 <script>
-$('.showhide').click(function() { var mine = $(this).children().attr("data-id"); 
-$("#"+mine).show();});
-//$('#mine').click(function() { $(".gift-form").hide(); });
+$('.showhide').click(function() { 
+var mine = $(this).children().attr("data-id"); 
+$("#"+mine).show();
+});
+
+$('.btn-checkout-big').click(function() { 
+	alert("ghjgjh")
+	$("#myForm").submit();
+});
+
 </script>
 <footer class="site-footer">
 <?php include 'includes/footer.php'; ?>
