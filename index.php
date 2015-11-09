@@ -34,5 +34,18 @@
 <?php include 'includes/footer.php'; ?>
 </footer>
 <script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+
+     jQuery(".slider").owlCarousel({
+          items: 1,
+          dots: false,
+          autoplay: true,
+          loop: true,
+          nav: true,
+     });
+
+});
+</script>
 </body>
 </html>
