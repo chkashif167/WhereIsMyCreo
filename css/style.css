@@ -96,3 +96,123 @@ text-transform: uppercase;line-height:1.5;}
 .margin1{margin-right:-15px;}
 .tablet,.smartphones{display:none;}
 .desktop{display:block;}
+
+#buy-t-shirts .buy-t-shirts{
+	background-image: url(../images/buy-t-shirts.jpg);
+	background-position:top center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#buy-t-shirts .buy-t-shirts .container{
+	min-height: 700px;
+	position: relative;
+}
+#buy-t-shirts .buy-t-shirts .container .caption-parent{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+}
+#buy-t-shirts .buy-t-shirts .container .caption{
+  	background-color: rgba( 255, 255, 255, 0.8 );
+  	    padding: 24px;
+  color: rgb( 255, 32, 121 );
+  text-transform: uppercase;
+}
+#buy-t-shirts .buy-t-shirts .container .caption h2,
+#buy-t-shirts .buy-t-shirts .container .caption h1{
+	font-size: 24px;
+	padding-bottom: 12px;
+	font-weight: 600;
+}
+#buy-t-shirts .buy-t-shirts .container .caption h2{
+	padding-top: 12px;
+}
+#buy-t-shirts .buy-t-shirts .container .caption p {
+    color: inherit;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+}
+#buy-t-shirts .buy-t-shirts .container .caption-parent .btn1 {
+    background-color: #36dcce;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin: 14px 0 0;
+    float: left;
+}
+#buy-t-shirts .buy-t-shirts .container .caption-parent .btn1:hover {
+    background-color: #f26c4f;
+}
+#buy-t-shirts .mycart h2 {
+    font-size: 24px;
+    color: rgb( 56, 202, 191 );
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 18px 0;
+}
+.showhide {
+    border-width: 3px;
+    border-color: rgb( 56, 202, 191 );
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb( 255, 255, 255 );
+    font-size: 22px;
+    color: rgb( 88, 88, 88 );
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+}
+.showhide input[type=radio]{
+    position: absolute;
+    opacity: 0;
+    top: -4px;
+    height: 100%;
+    width: 100%;
+    left: auto;
+    right: 0;
+    z-index: 500;
+}
+.showhide input[type=radio]:checked+span {
+    background-color: rgb( 255, 255, 255 );
+
+}
+div#gift-form {
+    padding: 80px 0 0 0;
+}
+.form-control {
+    border-width: 3px;
+    border-color: rgb( 242, 108, 79 );
+    border-style: solid;
+    border-radius: 10px;
+    padding: 12px;
+    height: auto;
+    font-size: 20px;
+    color: rgb( 165, 165, 165 );
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-control:focus{
+    border-color: rgb( 242, 108, 79 );
+
+}
+div#gift-form label {
+    font-size: 20px;
+    color: rgb( 242, 108, 79 );
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+div#gift-form.form-group {
+    margin-bottom: 30px;
+}
