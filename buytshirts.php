@@ -258,7 +258,6 @@
 								<span>Beyonce</span>
 							</span>
 						</label>
-
 						<label class="amir-diab">
 							<span class="cover-up">
 								<input type="radio" name="favMovie" value="Amir Diab" class="favMovie" >
