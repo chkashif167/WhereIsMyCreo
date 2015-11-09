@@ -7,10 +7,10 @@
 <body>
 <header id="header" class="header">
 <?php include 'includes/header.php'; ?>
-<?php include 'includes/banner2.php'; ?>
 </header><!-- /header -->
-
-<div class="container">
+<?php include 'includes/banner3.php'; ?>
+<div class="big-heading bgc2" align="center"><h1>FAQ</h1></div>
+<div class="container faq">
 <?php include 'includes/faq-content.php'; ?>
 </div>
 
