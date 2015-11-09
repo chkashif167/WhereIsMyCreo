@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php include 'includes/header-top.php'; ?>
-<title>Where Is My Creo | Buy T-Shirts</title>
+	<?php include 'includes/header-top.php'; ?>
+	<title>Where Is My Creo | Buy T-Shirts</title>
 </head>
 <body>
-<header id="header" class="header">
-<?php include 'includes/header.php'; ?>
-<?php //include 'includes/banner1.php'; ?>
-</header><!-- /header -->
-
+	<header id="header" class="header">
+		<?php include 'includes/header.php'; ?>
+	</header>
+	<main id="buy-t-shirts">
+		<section>
+			<div class="buy-t-shirts" align="right">
+				<div class="container">
+					<div class="caption-parent">
+						<div class="caption" align="left">
+							<h1>Never. Enough.</h1>
+							<p>Repeat after us. There can never be enough cheese on my nachos. </p>
+							<p>Never enough chocolate chips on my cookie.</p>
+							<p>Never enough guitars. Shoes. Or Saturdays in a week.</p>
+							<br>
+							<p>And never. Ever. Ever (we threw in an extra for effect). Enough t-shirts in my closet.</p>
+							<h2>AMEN.</h2>
+							<p>Enough said. Just sign up for AED 80 per month, and get an awesome new t-shirt at your doorstep. That’s like 12 scrumptious dishes at a blind tasting at your favorite restaurant. Umm, why blind? Oh we pick the design – and you’ll love it!</p>
+						</div>
+						<a href="#" class="btn1">WHERE’S MY CREO?</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<form class="container mycart" action="cart.php" method="Post" id="myForm">
+				<div class="clearfix active">
+					<h2>THIS AWESOME T-SHIRT</h2>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="showhide" data-id="">
+								<span><input type="radio" name="giftmine" value="mine" placeholder=""> IS MIne </span>
+							</label>
+						</div>
+						<div class="col-sm-6">
+							<label data-id="#gift-form" class="showhide">
+								<span><input type="radio" name="giftmine" value="gift" placeholder=""> IS A GIFT</span>
+							</label>
+						</div>
+					</div>
+					<div class="toggle" style="display:none;" id="gift-form" >
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+								  <input type="text" class="form-control" name="giftreceiver" placeholder="TYPE GIFT-GETTER’S NAME" required>
+								</div>
+								<div class="form-group">
+								<label>Email address (leave blank for a surprise :-)</label>
+								  <input type="email" class="form-control" name="email" placeholder="TYPE GIFT-GETTER’S EMAIL HERE" required>
+								</div>
+								<div class="form-group">
+								  <textarea name="message" rows="10" class="form-control" placeholder="SEND A PERSONALIZED MESSAGE"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 <form class="container mycart" action="cart.php" method="Post" id="myForm">
 	<div class="clearfix active">
 	<h2>THIS AWESOME T-SHIRT</h2>
@@ -279,5 +330,4 @@ else {
 <?php include 'includes/footer.php'; ?>
 </footer>
 </body>
-
 </html>
