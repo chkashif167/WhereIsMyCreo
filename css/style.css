@@ -172,7 +172,7 @@ text-transform: uppercase;line-height:1.5;}
     text-align: center;
     padding: 12px 0;
 }
-.showhide input[type=radio]{
+input[type=radio]{
     position: absolute;
     opacity: 0;
     top: -4px;
@@ -213,6 +213,360 @@ div#gift-form label {
     font-weight: normal;
     padding-bottom: 30px;
 }
-div#gift-form.form-group {
+div#gift-form .form-group {
     margin-bottom: 30px;
+}
+#myForm label.medium,
+#myForm label.large,
+#myForm label.xlarge,
+#myForm label.small {
+    display: inline-block;
+    width: 205px;
+    height: 195px;
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 15px;
+    font-size: 37.5px;
+    color: rgb( 242, 108, 79 );
+    font-weight: bold;
+    text-transform: uppercase;
+    border-width: 4px;
+    border-color: rgb( 242, 108, 79 );
+    border-style: solid;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+#myForm .size label:hover{
+    border-color: rgba( 242, 108, 79, 0.9 );
+}
+#myForm .size label.checked span.cover-up span,
+#myForm .size label:hover span.cover-up span {
+    left: 50%;
+    top: 50%;
+    margin-top: -17px;
+    margin-left: -20px;
+    color: #fff;
+}
+#myForm .size label span.cover-up{
+    transition: all ease 300ms;
+}
+#myForm .size label.checked span.cover-up,
+#myForm .size label:hover span.cover-up{
+    background-color: rgba( 242, 108, 79, 0.9 );
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#myForm .size label.checked{
+    border-color: rgba( 242, 108, 79, 0.9 );
+}
+#myForm .size label{
+    cursor: pointer;
+}
+
+#myForm .size span.cover-up span {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    text-align: center;
+    width: 40px;
+    height: 37px;
+    transition: all ease 300ms;
+}
+#myForm label.medium {
+    background-image: url('../images/m-tshirt.png');
+    background-size: 160px 150px;
+
+}
+#myForm label.large {
+    background-image: url('../images/l-tshirt.png');
+    background-size: 160px 150px;
+
+}
+#myForm label.xlarge {
+    background-image: url('../images/xl-tshirt.png');
+    background-size: 160px 150px;
+
+}
+#myForm label.small {
+    background-image: url('../images/s-tshirt.png');
+    background-size: 160px 150px;
+
+}
+#myForm .size {
+    text-align: center;
+}
+/**/
+#myForm label.round-neck,
+#myForm label.v-neck,
+#myForm label.tank-top,
+#myForm label.choose-for-me {
+    display: inline-block;
+    width: 190px;
+    height: 180px;
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    margin: 0 15px;
+    font-size: 37.5px;
+    color: rgb( 242, 108, 79 );
+    font-weight: bold;
+    text-transform: uppercase;
+    border-width: 4px;
+    border-color: rgb( 242, 108, 79 );
+    border-style: solid;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 300ms;
+}
+#myForm .shirttypes label .cover-up span{
+    position: absolute;
+    top: auto;
+    bottom: 15px;
+    font-size: 25px;
+    color: rgb( 242, 108, 79 );
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    left: 0;
+}
+
+#myForm label.round-neck {
+    background-image: url('../images/round-neck.png');
+    background-size: 146px 96px;
+
+}
+#myForm label.v-neck {
+    background-image: url('../images/v-neck.png');
+    background-size: cover;
+    background-size: 117px 96px;
+
+
+}
+#myForm label.tank-top {
+    background-image: url('../images/tank-top.png');
+    background-size: cover;
+    background-size: 147px 96px;
+}
+#myForm .shirttypes {
+    text-align: center;
+}
+#myForm .shirttypes label.checked,
+#myForm .shirttypes label:hover{
+    border-color: rgba( 242, 108, 79, 0.9 );
+
+}
+#myForm .shirttypes label.checked span.cover-up,
+#myForm .shirttypes label:hover span.cover-up{
+    background-color: rgba( 242, 108, 79, 0.9 );
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all ease 300ms;
+}
+#myForm .shirttypes label.checked span.cover-up span,
+#myForm .shirttypes label:hover span.cover-up span {
+    left: 0;
+    top: 50%;
+    margin-top: -17px;
+    color: #fff;
+}
+#myForm .shirttypes span.cover-up span {
+    width: 100%;
+    transition: all ease 300ms;
+    padding:0 12px;
+}
+#myForm label.round-neck.checked,
+#myForm label.v-neck.checked,
+#myForm label.tank-top.checked,
+#myForm label.choose-for-me.checked,
+#myForm label.round-neck:hover,
+#myForm label.v-neck:hover,
+#myForm label.tank-top:hover,
+#myForm label.choose-for-me:hover{
+    background-position: center;
+
+}
+/**/
+#myForm .fav-color label {
+    display: inline-block;
+    width: 96px;
+    height: 81px;
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    margin: 0 7px;
+    font-size: 37px;
+    color: rgb( 242, 108, 79 );
+    font-weight: bold;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-color: rgb( 242, 108, 79 );
+    border-style: solid;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 300ms;
+}
+#myForm .fav-color label span.cover-up span{
+    display: none;
+}
+#myForm .fav-color label.text{
+    background-color: #fff !important;
+    border-color: black !important;
+}
+#myForm .fav-color label.text span.cover-up span{
+    display: block;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: -9px;
+}
+#myForm .fav-color label span.cover-up{
+    transition: all ease 300ms;
+}
+#myForm .fav-color label.checked span.cover-up,
+#myForm .fav-color label:hover span.cover-up{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#myForm .fav-color label.checked span.cover-up:after,
+#myForm .fav-color label:hover span.cover-up:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-image: url('../images/plus.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+#myForm .fav-color label.text.checked span.cover-up:after,
+#myForm .fav-color label.text:hover span.cover-up:after,
+#myForm .fav-color label.white.checked span.cover-up:after,
+#myForm .fav-color label.white:hover span.cover-up:after{
+    background-image: url('../images/black-plus.png');
+}
+#myForm .fav-color .btn-blind {
+    border-width: 4px;
+    border-color: rgb( 242, 108, 79 );
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 37px;
+    color: rgb( 242, 108, 79 );
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin: 14px auto 0 auto;
+    display: block;
+    line-height: 1em;
+}
+
+#myForm .fav-color .btn-blind .img{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('../images/smily-blind.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+#myForm .fav-color .btn-blind:hover{
+    background-color: rgb( 242, 108, 79 );
+    color: #fff;
+}
+#myForm .fav-color .btn-blind:hover .img{
+    background-image: url('../images/white-smily-blind.png');
+}
+#myForm .fav-Singer label,
+#myForm .fav-Movie label {
+    display: inline-block;
+    width: 212px;
+    height: 159px;
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0 6.5px;
+    font-size: 37px;
+    color: rgb( 242, 108, 79 );
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 300ms;
+}
+#myForm .fav-Movie label.troy {
+    background-image: url('../images/troy.png');
+}
+#myForm .fav-Movie label.godfather {
+    background-image: url('../images/The-GODFATHER.png');
+}
+#myForm .fav-Movie label.star-wars {
+    background-image: url('../images/star-wars.png');
+}
+#myForm .fav-Movie label.dispicable-me {
+    background-image: url('../images/despicable-me.png');
+}
+#myForm .fav-Singer label .cover-up span,
+#myForm .fav-Movie label .cover-up span{
+    font-size: 18px;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: rgb( 0, 0, 0 );
+    display: block;
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    padding: 6px 0;
+    width: 100%;
+    transition: all ease 300ms;
+}
+#myForm .fav-Singer label.checked .cover-up span,
+#myForm .fav-Singer label:hover .cover-up span,
+#myForm .fav-Movie label.checked .cover-up span,
+#myForm .fav-Movie label:hover .cover-up span{
+  background-color: rgb( 242, 108, 79 );
+
+}
+#myForm .fav-Singer label.2Pac {
+    background-image: url('../images/2pac.png');
+}
+#myForm .fav-Singer label.adel {
+    background-image: url('../images/adel.png');
+}
+#myForm .fav-Singer label.amr-diab {
+    background-image: url('../images/amr-diab.png');
+}
+#myForm .fav-Singer label.beyonce {
+    background-image: url('../images/beyonce.png');
+}
+#myForm .fav-Singer label.kety-perry {
+    background-image: url('../images/Katy-perry.png');
 }
