@@ -22,11 +22,15 @@ background-repeat:no-repeat;height:700px;}
 .banner3{background-image: url(../images/banner3.jpg);background-position:top center;background-size:cover;
 background-repeat:no-repeat;height:700px;}
 .banner .caption{margin-top:18%;margin-right:20px;max-width:400px;}
-.btn1,.btn1-alt{background-color:#36dcce;display:inline-block;padding:15px 20px;color:#fff;font-weight:700;font-size:150%;border-radius:7px;
-margin-bottom: 10px;}
-.btn1:hover,.btn1-alt{background-color:#f26c4f;color:#fff;}
+.btn1,.btn1-alt,.btn-cart,.btn-cart-alt{background-color:#36dcce;display:inline-block;padding:15px 20px;color:#fff;font-weight:700;font-size:150%;
+border-radius:7px;margin-bottom: 10px;}
+.btn1:hover,.btn1-alt,.btn-cart:hover{background-color:#f26c4f;color:#fff;}
+.btn-cart,.btn-cart-alt{border:0;padding:8px 16px;text-transform:uppercase;font-size:110%;margin-top:15px;}
+.btn-cart-alt{background-color:#fff;color:#585858;border:2px solid #36dcce;padding:6px 16px;}
+.btn-cart-alt:hover{background-color:#585858;color:#fff;border-color:#585858;}
 .btn1-alt{border-radius:0;font-size:100%;width:100%;text-align:center;}
 .btn1-alt:hover{background-color:#36dcce;color:#fff;}
+
 .banner .caption h1{font-size:150%;font-weight:700;color:#231f20;margin-bottom:10px;line-height:1.1;}
 .banner.banner3 .caption{max-width:25%;margin-top:15%;}
 .banner.banner3 .btn1-alt{margin-top:10px;}
@@ -68,6 +72,22 @@ background-image:url(../images/aro-right.png);background-repeat:no-repeat;backgr
 .faq h1{font-size:150%;font-weight:700;color:#f26c4f;margin-bottom:10px;margin-top:40px;}
 .faq h1:first-child{margin-top:20px;}
 .faq p{text-transform: none;margin-bottom: 10px;}
+
+/* Cart */
+.cartpage{padding-bottom:50px;}
+.cartpage h3{font-size:150%;color:#f26c4f;font-weight:700;margin-bottom:15px;}
+.cart-table{width:100%;border-bottom:1px solid #38cabf;margin-bottom:40px;}
+.cart-table tr{border-bottom:1px solid #38cabf;}
+.cart-table tr.totals{border-bottom:0;}
+.cart-table thead tr{border-bottom:0;}
+.cart-table th,.cart-table h4,.cart-table .price h5{color:#38cabf;font-weight:700;font-size:120%;}
+.cart-table td{padding:15px 0;vertical-align:middle;}
+.cart-table tr.totals td{padding:5px 0;}
+.cart-table h4{line-height:1.5;}
+.cart-table .date h4{color:#585858;}
+.cart-table .date h4 span{color:#38cabf;}
+.cart-table .price{color:#585858;}
+.cart-table .price h5{font-weight:700;color:#585858;}
 
 /* Footer */
 .site-footer .footer-main{background-color: #f26c4f;padding:50px 0;}
