@@ -141,10 +141,10 @@
 	<div class="clearfix disabled">
 	<h2>GIFT WRAP IT?</h2>
 	<div class="col-sm-6">
-		<label><input type="radio" name="giftwrapping" value="noyes" placeholder=""> NAH!</label>
+		<label><input type="radio" name="giftwrapping" value="no" placeholder=""> NAH!</label>
 	</div>
 	<div class="col-sm-6">
-		<label><input type="radio" name="giftwrapping" value="" placeholder="" checked="checked"> YA!</label>
+		<label><input type="radio" name="giftwrapping" value="yes" placeholder="" checked="checked"> YA!</label>
 	</div>
 	</div>
 	<button type="button" class="btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>

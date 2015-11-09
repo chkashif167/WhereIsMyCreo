@@ -45,27 +45,45 @@ $giftwrapping = $_POST["giftwrapping"];
 	<tr>
 	<td><h4>subscription type:</h4></td>
 	<td>
-	<select>
+	<select class ="subscription" id ="subscription">
 	<?php if($payOnce == 89):?>
-	<option value="">1 T-Shirt/Month</option>
-	<option value="">2 T-Shirt/Month</option>
-	<option value="">3 T-Shirt/Month</option>
+	<option value="89">1 T-Shirt/Month</option>
+	<option value="82">2 T-Shirt/Month</option>
+	<option value="75">3 T-Shirt/Month</option>
 	<?php elseif($payOnce == 82): ?>
-    <option value="">2 T-Shirt/Month</option>
-    <option value="">1 T-Shirt/Month</option>
-	<option value="">3 T-Shirt/Month</option>
+    <option value="82">2 T-Shirt/Month</option>
+    <option value="89">1 T-Shirt/Month</option>
+	<option value="75">3 T-Shirt/Month</option>
     <?php elseif($payOnce == 75): ?>
-    <option value="">3 T-Shirt/Month</option>
-    <option value="">2 T-Shirt/Month</option>
-	<option value="">1 T-Shirt/Month</option>
+    <option value="75">3 T-Shirt/Month</option>
+    <option value="82">2 T-Shirt/Month</option>
+	<option value="89">1 T-Shirt/Month</option>
 	<?php elseif($payOnce == 4): ?>
-	<option value="">3 T-Shirt/Month</option>
-    <option value="">2 T-Shirt/Month</option>
-	<option value="">1 T-Shirt/Month</option>
+	<option value="">1 T-Shirt/3 Months</option>
+    <option value="">1 T-Shirt/6 Months</option>
+	<option value="">1 T-Shirt/9 Months</option>
+	<option value="">1 T-Shirt/1 Year</option>
+    <?php elseif($payOnce == 8): ?>
+	<option value="">1 T-Shirt/6 Months</option>
+    <option value="">1 T-Shirt/3 Months</option>
+	<option value="">1 T-Shirt/9 Months</option>
+	<option value="">1 T-Shirt/1 Year</option>
+    <?php elseif($payOnce == 11): ?>
+	<option value="">1 T-Shirt/9 Months</option>
+    <option value="">1 T-Shirt/3 Months</option>
+	<option value="">1 T-Shirt/6 Months</option>
+	<option value="">1 T-Shirt/1 Year</option>
+    <?php elseif($payOnce == 15): ?>
+	<option value="">1 T-Shirt/1 Year</option>
+    <option value="">1 T-Shirt/3 Months</option>
+	<option value="">1 T-Shirt/6 Months</option>
+	<option value="">1 T-Shirt/9 Months</option>
     <?php endif; ?>
 	</select>
 	</td>
-	<td class="price" align="right"><h5>89 AED</h5></td>
+	<?php if($payOnce == 89 || $payOnce == 82 || $payOnce == 75): ?>
+	<td class="price" align="right"><h5><?php echo $payOnce; ?> AED</h5></td>
+    <?php endif; ?>
 	</tr>
 	
 	<tr>
@@ -78,6 +96,7 @@ $giftwrapping = $_POST["giftwrapping"];
 	</td>
 	<td>
 	<select>
+	<?php if($payOnce == 89)?>
 	<option value="">Every Month</option>
 	<option value="">Every Month</option>
 	<option value="">Every Month</option>
@@ -90,8 +109,13 @@ $giftwrapping = $_POST["giftwrapping"];
 	<td><h4>cool wraping:</h4></td>
 	<td>
 	<select>
-	<option value="">yes</option>
-	<option value="">no</option>
+	<?php if($giftwrapping == "yes"): ?>
+	<option value=""><?php echo $giftwrapping ?></option></option>
+	<option value="">No</option></option>
+	<?php elseif($giftwrapping == "no"): ?>
+	<option value=""><?php echo $giftwrapping ?></option></option>
+	<option value="">Yes</option></option>	
+    <?php endif; ?>
 	</select>
 	</td>
 	<td class="price" align="right"><h5>15 AED</h5>(5 AED per month)</td>
@@ -153,6 +177,12 @@ $giftwrapping = $_POST["giftwrapping"];
 </div>
 
 </div>
+<script>
+$(".subscription").change(function(){
+	var price = document.getElementById("subscription").value
+     $(".price").html("<h5>"+price+" AED</h5>");
+});
+</script>
 
 <footer class="site-footer">
 <?php include 'includes/footer.php'; ?>
