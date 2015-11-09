@@ -1,6 +1,6 @@
 <div class="container">
-<div class="logo col-sm-3"><a href="index.php"><img src="images/logo.png"></a></div>
-<div class="col-sm-9 padding-r">
+<div class="logo col-sm-2"><a href="index.php"><img src="images/logo.png"></a></div>
+<div class="col-sm-10 paddingzeroR">
 	<ul class="main-menu">
 	<li><a href="buytshirts.php">Buy T-Shirts</a></li>
 	<li><a href="how.php">How Does This Work</a></li>
