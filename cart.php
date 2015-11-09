@@ -6,20 +6,13 @@ $giftreceiver = $_POST["giftreceiver"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 $gender = $_POST["gender"];
-if($gender == "woman"){
 $size   = $_POST["size"];
 $shirttypes   = $_POST["shirttypes"];
 $favcolor   = $_POST["favcolor"];
 $favmovie   = $_POST["favMovie"];
 $favsinger = $_POST["favSinger"];
-}
 $paytime = $_POST["paytype"];
-if($paytime == "once"){
 $payOnce = $_POST["payOnce"];
-}
-if($paytime == "payMonthly"){
-$payMonthly = $_POST["monthly"];
-}
 $giftwrapping = $_POST["giftwrapping"];
 
 ?>
@@ -53,9 +46,23 @@ $giftwrapping = $_POST["giftwrapping"];
 	<td><h4>subscription type:</h4></td>
 	<td>
 	<select>
+	<?php if($payOnce == 89):?>
 	<option value="">1 T-Shirt/Month</option>
+	<option value="">2 T-Shirt/Month</option>
+	<option value="">3 T-Shirt/Month</option>
+	<?php elseif($payOnce == 82): ?>
+    <option value="">2 T-Shirt/Month</option>
+    <option value="">1 T-Shirt/Month</option>
+	<option value="">3 T-Shirt/Month</option>
+    <?php elseif($payOnce == 75): ?>
+    <option value="">3 T-Shirt/Month</option>
+    <option value="">2 T-Shirt/Month</option>
 	<option value="">1 T-Shirt/Month</option>
+	<?php elseif($payOnce == 4): ?>
+	<option value="">3 T-Shirt/Month</option>
+    <option value="">2 T-Shirt/Month</option>
 	<option value="">1 T-Shirt/Month</option>
+    <?php endif; ?>
 	</select>
 	</td>
 	<td class="price" align="right"><h5>89 AED</h5></td>
