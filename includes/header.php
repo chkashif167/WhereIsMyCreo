@@ -6,7 +6,7 @@
 	<li><a href="how.php">How Does This Work</a></li>
 	<li><a href="faq.php">Faq/Contact</a></li>
 	<li class="freetshirt"><a>Get Free T-Shirt</a></li>
-	<li class="mini-cart"><a href="">My Cart <span>1</span></a></li>
+	<li class="mini-cart"><a href="cart.php">My Cart <span>1</span></a></li>
 	</ul>
 </div>
 </div>

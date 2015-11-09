@@ -1,9 +1,9 @@
 <div class="footer-main">
 	<div class="container">
 		<div class="col-sm-12" align="center">
-		<h1>Sign up for our always ridiculous, rarely important, and probably life-changing emails. You won’t be sorry! Or will you?</h1>
+		<h1>Sign up for our always ridiculous, <br>rarely important, and probably life-changing emails. <br>You won’t be sorry! Or will you?</h1>
 		<div class="subscribe">
-			<input type="text" name="" value="" placeholder="Enter Your Email ID">
+			<input type="text" name="" value="" placeholder="your email address...">
 			<button type="button" class="btn1">SUBMIT</button>
 		</div>
 		</div>

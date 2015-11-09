@@ -7,3 +7,4 @@
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/fontsmoothie.min.js"></script>
+<script type="text/javascript" src="basic-jquery-validation-form/jquery.validate.min.js"></script>
