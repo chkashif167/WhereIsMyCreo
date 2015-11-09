@@ -259,30 +259,30 @@ $giftwrapping = $_POST["giftwrapping"];
 </table>
 <div class="paymentmethod col-sm-6">
 	<div class="form-horizontal" action="" method="">
-	
+	<h4>Shipping Address</h4>
 	  <div class="form-group">
 	  <div class="col-sm-4"><label for="country">Country</label></div>
-	  <div class="col-sm-8"><input type="text" class="form-control" name="country" required></div>
+	  <div class="col-sm-8"><input type="text" class="form-control" name="country" id="country" required></div>
 	  </div>
 	
 	  <div class="form-group">
 	  <div class="col-sm-4"><label for="city">City</label></div>
-	  <div class="col-sm-8"><input type="text" class="form-control" name="city" required></div>
+	  <div class="col-sm-8"><input type="text" class="form-control" name="city" id="city" required></div>
 	  </div>
 
 	  <div class="form-group">
 	  <div class="col-sm-4"><label for="address">Full address</label></div>
-	  <div class="col-sm-8"><input type="text" class="form-control" name="address" required></div>
+	  <div class="col-sm-8"><input type="text" class="form-control" name="address" id="address" required></div>
 	  </div>
 
 	  <div class="form-group">
 	  <div class="col-sm-4"><label for="email">Email Address</label></div>
-	  <div class="col-sm-8"><input type="text" class="form-control" name="email" required></div>
+	  <div class="col-sm-8"><input type="text" class="form-control" name="email" id="email" required></div>
 	  </div>
 
 	  <div class="form-group">
 	  <div class="col-sm-4"><label for="mobile">Mobile No.</label></div>
-	  <div class="col-sm-8"><input type="text" class="form-control" name="mobile" required></div>
+	  <div class="col-sm-8"><input type="text" class="form-control" name="mobile" id="mobile" required></div>
 	  </div>
 	</div>
 	<button type="" class="btn-checkout">Place Your Order</button>
