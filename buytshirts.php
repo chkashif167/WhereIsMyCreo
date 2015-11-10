@@ -246,31 +246,31 @@
 						<h2 class="fifth">My Favorite Singer</h2>
 						<label class="kety-perry">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="kety perry" class="favMovie" >
+								<input type="radio" name="favSinger" value="kety perry" class="favMovie" >
 								<span>Kety Perry</span>
 							</span>
 						</label>
 						<label class="2Pac">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="2Pac" class="favMovie" >
+								<input type="radio" name="favSinger" value="2Pac" class="favMovie" >
 								<span>2Pac</span>
 							</span>
 						</label>
 						<label class="beyonce">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="beyonce" class="favMovie" >
+								<input type="radio" name="favSinger" value="beyonce" class="favMovie" >
 								<span>Beyonce</span>
 							</span>
 						</label>
 						<label class="amir-diab">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="Amir Diab" class="favMovie" >
+								<input type="radio" name="favSinger" value="Amir Diab" class="favMovie" >
 								<span>Amir Diab</span>
 							</span>
 						</label>
 						<label class="adel">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="adel" class="favMovie" >
+								<input type="radio" name="favSinger" value="adel" class="favMovie" >
 								<span>Adel</span>
 							</span>
 						</label>
@@ -379,13 +379,13 @@
 				<h2>GIFT WRAP IT?</h2>
 				<div class="row">
 					<div class="col-sm-6">
-						<label>
+						<label class="gift-wrapping">
 							<input type="radio" name="giftwrapping" value="noyes" placeholder="">
 							<span>NAH!</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
-						<label>
+						<label class="gift-wrapping">
 							<input type="radio" name="giftwrapping" value="" checked="checked">
 							<span>YA!</span>
 						</label>
@@ -395,10 +395,9 @@
 			<button type="submit" class="btn btn-default btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
 		</form>
 	</section>
-
-<script type="text/javascript" src="js/buytshirt.js"></script>
-<footer class="site-footer">
-	<?php include 'includes/footer.php'; ?>
-</footer>
+	<script type="text/javascript" src="js/buytshirt.js"></script>
+	<footer class="site-footer">
+		<?php include 'includes/footer.php'; ?>
+	</footer>
 </body>
 </html>
