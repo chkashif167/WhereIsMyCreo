@@ -2,7 +2,6 @@
 namespace  com\checkout ;
 include 'checkout-php-library/autoload.php';
 
-
 $apiClient = new ApiClient('sk_test_f89deda7-f8df-4fe0-88af-0027b863a345','sandbox');
 //create an instance of a token service
 $tokenService = $apiClient->tokenService();
@@ -19,9 +18,9 @@ $phone = new  ApiServices\SharedModels\Phone();
 
 $product0->setName($subscriptions);
 $product0->setDescription('a4 white copy paper');
-$product0->setQuantity(1);
-$product0->setShippingCost(10);
-$product0->setSku('ABC123');
+$product0->setQuantity($qty);
+//$product0->setShippingCost(10);
+//$product0->setSku('ABC123');
 $product0->setTrackingUrl('http://www.tracker.com');
 
 $phone->setNumber("203 583 44 55");

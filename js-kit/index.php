@@ -1,6 +1,5 @@
 <?php
     $mine = $_POST["mine"]; 
-    echo $mine;
     $size = $_POST["size"];
     $gender = $_POST["gender"];
     $shirttype = $_POST["shirtypes"];
@@ -8,11 +7,18 @@
     $favmovie = $_POST["favmovie"];
     $favsinger = $_POST["favsinger"];
     $totalprice = $_POST["totalprice"];
-    echo $totalprice ;
     $subscriptions = $_POST["subscriptions"];
-    echo $subscriptions;
     $gifts = $_POST["gifts"];
-    echo $gifts;
+    if($subscriptions == 89):
+      $qty = 1;
+    elseif($subscriptions == 82):
+      $qty=2;
+    elseif($subscriptions == 75):
+      $qty=3;
+    else:
+      $qty = 1;
+    endif;
+
 ?>
 
 <?php include 'createpaymenttoken.php';?>
