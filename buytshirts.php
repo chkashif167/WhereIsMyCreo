@@ -35,12 +35,14 @@
 					<div class="col-sm-6">
 						<label class="showhide">
 							<input type="radio" name="giftmine" value="mine" data-id="mine" checked="checked" class="mine">
-							IS MIne</label>
+							<span>Is Mine</span>
+						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="showhide">
 							<input type="radio" name="giftmine" value="gift" data-id="gift-form" class="gift">
-							IS A GIFT</label>
+							<span>IS A GIFT</span>
+						</label>
 					</div>
 				</div>
 				<div class="gift-form" style="display:none;" id="gift-form">
@@ -66,12 +68,14 @@
 					<div class="col-sm-6">
 						<label class="showhide">
 							<input type="radio" name="gender" value="man" data-id="man" checked="checked" class="men">
-							Man</label>
+							<span>Man</span>
+						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="showhide">
 							<input type="radio" name="gender" value="woman" data-id="women" class ="women">
-							Women</label>
+							<span>Women</span>
+						</label>
 					</div>
 				</div>
 				<div class="women" id="women" style="display:none;">
@@ -278,44 +282,80 @@
 			</div>
 			<div class="clearfix disabled">
 				<h2>How Often you wana pay?</h2>
-				<div class="col-sm-6">
-					<label class="showhide">
-						<input type="radio" name="paytype" value="once" data-id="payOnce" checked="checked" class="payonce">
-						Once</label>
+				<div class="row">
+					<div class="col-sm-6">
+						<label class="showhide">
+							<input type="radio" name="paytype" value="once" data-id="payOnce" checked="checked" class="payonce">
+							<span>Once</span>
+						</label>
+					</div>
+					<div class="col-sm-6">
+						<label class="showhide">
+							<input type="radio" name="paytype" value="monthly" data-id="payMonthly" class="paymonthly">
+							<span>Monthly</span>
+						</label>
+					</div>
 				</div>
-				<div class="col-sm-6">
-					<label class="showhide">
-						<input type="radio" name="paytype" value="monthly" data-id="payMonthly" class="paymonthly">
-						Monthly</label>
-				</div>
-				<div class="payOnce" style="display:none;" id="payOnce">
+				<div class="pay-Once" style="display:none;" id="payOnce">
 					<label>
-						<input type="radio" name="payOnce" value="4" class="payOnce">
-						3 Month<b>Save 4%</b></label>
+						<span class="cover-up">
+							<input type="radio" name="payOnce" value="4" class="payOnce">
+							<span>3 Month</span>
+							<b>Save 4%</b>
+						</span>
+					</label>
 					<label>
-						<input type="radio" name="payOnce" value="8" class="payOnce">
-						6 Month<b>Save 8%</b></label>
+						<span class="cover-up">
+							<input type="radio" name="payOnce" value="8" class="payOnce">
+							<span>6 Month</span>
+							<b>Save 8%</b>
+						</span>
+					</label>
 					<label>
-						<input type="radio" name="payOnce" value="11" class="payOnce">
-						9 Month<b>Save 11%</b></label>
+						<span class="cover-up">
+							<input type="radio" name="payOnce" value="11" class="payOnce">
+							<span>9 Month</span>
+							<b>Save 11%</b>
+						</span>
+					</label>
 					<label>
-						<input type="radio" name="payOnce" value="15" class="payOnce">
-						1 year<b>Save 15%</b></label>
+						<span class="cover-up">
+							<input type="radio" name="payOnce" value="15" class="payOnce">
+							<span>1 Year</span>
+							<b>Save 15%</b>
+						</span>
+					</label>
 					<div class="payonce-error" style="display:none;">
 						<p>Please select one of the option</p>
 					</div>
 				</div>
-				<div class="payMonthly" style="display:none;" id="payMonthly">
+				<div class="pay-Monthly" style="display:none;" id="payMonthly">
 					<h2>how many t-shirt per month you want?</h2>
 					<label>
-						<input type="radio" name="payOnce" value="89" class="payMonthly">
-						1 t-shirt <b>89 AED</b>a month</label>
+						<span class="cover-up">
+							<input type="radio" name="payOnce" value="89" class="payMonthly">
+							<span class="shirt">1 T-SHIRT</span>
+							<span class="price">89 AED <em>a month</em></span>
+						</span>
+					</label>
 					<label>
-						<input type="radio" name="payOnce" value="82" class="payMonthly">
-						2 t-shirts <b>82 AED per T-shirt</b>a month <span>save 14 AED</span></label>
+						<span class="cover-up">
+							<input type="radio" name="payOnce" value="82" class="payMonthly">
+							<span class="shirt">2 T-SHIRTS</span>
+							<span class="price">82 AED per T-shirt</span>
+							<sapn class="month">a month</sapn>
+							<span class="tag">save 14 AED</span>
+						</span>
+					</label>
 					<label>
-						<input type="radio" name="payOnce" value="75" class="payMonthly">
-						3 t-shirts <b>85 AED per t-shirt</b>a month <span>save 14 AED</span></label>
+						<span class="cover-up">
+							<input type="radio" name="payOnce" value="75" class="payMonthly">
+							<span class="shirt">3 T-SHIRTS</span>
+							<span class="price">85 AED per T-shirt</span>
+							<sapn class="month">a month</sapn>
+							<span class="tag">save 14 AED</span>
+						</span>
+					</label>
 					<div class="paymonthly-error" style="display:none;">
 						<p>Please select one of the option</p>
 					</div>
@@ -326,12 +366,14 @@
 				<div class="col-sm-6">
 					<label>
 						<input type="radio" name="giftwrapping" value="noyes" placeholder="">
-						NAH!</label>
+						<span>NAH!</span>
+					</label>
 				</div>
 				<div class="col-sm-6">
 					<label>
 						<input type="radio" name="giftwrapping" value="" checked="checked">
-						YA!</label>
+						<span>YA!</span>
+					</label>
 				</div>
 			</div>
 			<button type="button" class="btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
