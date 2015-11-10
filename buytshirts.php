@@ -105,7 +105,7 @@
 								<span>XL</span>
 							</span>
 						</label>
-						<div class="size-error" style="display:none;">
+						<div class="size-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 					</div>
@@ -135,7 +135,7 @@
 								<span>you choose for me</span>
 							</span>
 						</label>
-						<div class="shirttypes-error" style="display:none;">
+						<div class="shirttypes-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 					</div>
@@ -201,7 +201,7 @@
 								<span>Blue</span>
 							</span>
 						</label>
-						<div class="favcolor-error" style="display:none;">
+						<div class="favcolor-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 						<button type="button" class="btn btn-default btn-blind">im color blind <span class="img"></span></button>
@@ -238,7 +238,7 @@
 								<span>dispicable me</span>
 							</span>
 						</label>
-						<div class="favMovie-error" style="display:none;">
+						<div class="favMovie-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 					</div>
@@ -274,7 +274,7 @@
 								<span>Adel</span>
 							</span>
 						</label>
-						<div class="favSinger-error" style="display:none;">
+						<div class="favSinger-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 					</div>
@@ -300,32 +300,40 @@
 					<label>
 						<span class="cover-up">
 							<input type="radio" name="payOnce" value="4" class="payOnce">
-							<span>3 Month</span>
-							<b>Save 4%</b>
+							<div>
+								<span>3 Month</span>
+								<b>Save 4%</b>
+							</div>
 						</span>
 					</label>
 					<label>
 						<span class="cover-up">
 							<input type="radio" name="payOnce" value="8" class="payOnce">
-							<span>6 Month</span>
-							<b>Save 8%</b>
+							<div>
+								<span>6 Month</span>
+								<b>Save 8%</b>
+							</div>
 						</span>
 					</label>
 					<label>
 						<span class="cover-up">
 							<input type="radio" name="payOnce" value="11" class="payOnce">
-							<span>9 Month</span>
-							<b>Save 11%</b>
+							<div>
+								<span>9 Month</span>
+								<b>Save 11%</b>
+							</div>
 						</span>
 					</label>
 					<label>
 						<span class="cover-up">
 							<input type="radio" name="payOnce" value="15" class="payOnce">
-							<span>1 Year</span>
-							<b>Save 15%</b>
+							<div>
+								<span>1 Year</span>
+								<b>Save 15%</b>
+							</div>
 						</span>
 					</label>
-					<div class="payonce-error" style="display:none;">
+					<div class="payonce-error error" style="display:none;">
 						<p>Please select one of the option</p>
 					</div>
 				</div>
@@ -334,54 +342,62 @@
 					<label>
 						<span class="cover-up">
 							<input type="radio" name="payOnce" value="89" class="payMonthly">
-							<span class="shirt">1 T-SHIRT</span>
-							<span class="price">89 AED <em>a month</em></span>
+							<div>
+								<span class="shirt">1 T-SHIRT</span>
+								<span class="price">89 AED <em>a month</em></span>
+							</div>
 						</span>
 					</label>
 					<label>
 						<span class="cover-up">
 							<input type="radio" name="payOnce" value="82" class="payMonthly">
-							<span class="shirt">2 T-SHIRTS</span>
-							<span class="price">82 AED per T-shirt</span>
-							<sapn class="month">a month</sapn>
-							<span class="tag">save 14 AED</span>
+							<div>
+								<span class="shirt">2 T-SHIRTS</span>
+								<span class="price">82 AED per T-shirt</span>
+								<span class="month">a month</span>
+							</div>
+							<span class="tag"><b>save 14 AED</b></span>
 						</span>
 					</label>
 					<label>
 						<span class="cover-up">
 							<input type="radio" name="payOnce" value="75" class="payMonthly">
-							<span class="shirt">3 T-SHIRTS</span>
-							<span class="price">85 AED per T-shirt</span>
-							<sapn class="month">a month</sapn>
-							<span class="tag">save 14 AED</span>
+							<div>
+								<span class="shirt">3 T-SHIRTS</span>
+								<span class="price">85 AED per T-shirt</span>
+								<span class="month">a month</span>
+							</div>
+							<span class="tag"><b>save 42 AED</b></span>
 						</span>
 					</label>
-					<div class="paymonthly-error" style="display:none;">
+					<div class="paymonthly-error error" style="display:none;">
 						<p>Please select one of the option</p>
 					</div>
 				</div>
 			</div>
-			<div class="clearfix disabled">
+			<div class="clearfix gift-wrapping disabled">
 				<h2>GIFT WRAP IT?</h2>
-				<div class="col-sm-6">
-					<label>
-
-						<input type="radio" name="giftwrapping" value="no" placeholder="">
-						NAH!</label>
-				</div>
-				<div class="col-sm-6">
-					<label>
-						<input type="radio" name="giftwrapping" value="yes" checked="checked">
-						YA!</label>
+				<div class="row">
+					<div class="col-sm-6">
+						<label class="gift-wrapping">
+							<input type="radio" name="giftwrapping" value="noyes" placeholder="">
+							<span>NAH!</span>
+						</label>
+					</div>
+					<div class="col-sm-6">
+						<label class="gift-wrapping">
+							<input type="radio" name="giftwrapping" value="" checked="checked">
+							<span>YA!</span>
+						</label>
+					</div>
 				</div>
 			</div>
-			<button type="button" class="btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
+			<button type="submit" class="btn btn-default btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
 		</form>
 	</section>
-
-<script type="text/javascript" src="js/buytshirt.js"></script>
-<footer class="site-footer">
-	<?php include 'includes/footer.php'; ?>
-</footer>
+	<script type="text/javascript" src="js/buytshirt.js"></script>
+	<footer class="site-footer">
+		<?php include 'includes/footer.php'; ?>
+	</footer>
 </body>
 </html>
