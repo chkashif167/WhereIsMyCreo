@@ -203,7 +203,12 @@ text-transform: uppercase;line-height:1.5;}
     text-align: center;
     padding: 18px 0;
 }
-.showhide {
+label.showhide{
+	display: block;
+	cursor: pointer;
+	
+}
+label.showhide span {
     border-width: 3px;
     border-color: rgb( 56, 202, 191 );
     border-style: solid;
@@ -216,6 +221,8 @@ text-transform: uppercase;line-height:1.5;}
     display: block;
     text-align: center;
     padding: 12px 0;
+    cursor: pointer;
+    transition: all ease 500ms;
 }
 input[type=radio]{
     position: absolute;
@@ -226,11 +233,13 @@ input[type=radio]{
     left: auto;
     right: 0;
     z-index: 500;
+    cursor: pointer;
 }
 .showhide input[type=radio]:checked+span {
-    background-color: rgb( 255, 255, 255 );
-
+  background-color: rgb( 56, 202, 191 );
+  color: white;
 }
+
 div#gift-form {
     padding: 80px 0 0 0;
 }
@@ -614,4 +623,35 @@ div#gift-form .form-group {
 }
 #myForm .fav-Singer label.kety-perry {
     background-image: url('../images/Katy-perry.png');
+}
+/**/
+#myForm .pay-Once{
+	text-align: center;
+	padding: 70px 0
+}
+#myForm .pay-Once label {
+    display: inline-block;
+	width: 260px;
+	height: 132px;
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    margin:0 14px;
+    font-size: 37.5px;
+    color: rgb( 242, 108, 79 );
+    font-weight: bold;
+    text-transform: uppercase;
+    border-width: 4px;
+    border-color: rgb( 242, 108, 79 );
+    border-style: solid;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 300ms;
+}
+#myForm .pay-Once label:first-child{
+	margin-left: 0
+}
+#myForm .pay-Once label:nth-last-child(2){
+	margin-right: 0
 }
