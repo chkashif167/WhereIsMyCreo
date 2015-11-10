@@ -21,9 +21,8 @@ background-position:115px 10px;background-size:30px;position:relative;}
 .main-menu li.mini-cart a span{position: absolute;right:32px;top:18px;background-color:#f26c4f;width:22px;text-align:center;height:22px;
 line-height:1.5;border-radius:50%;font-size:15px;color: #38cabf;}
 .main-menu li.freetshirt{position:relative;}
-.main-menu li.freetshirt a:first-child{margin-bottom:10px;}
 .main-menu li.freetshirt .freeshirt-container{position:absolute;background-color:#fcfefc;border:3px solid #f26c4f;border-radius:8px;padding:15px;
-text-align:left;width:115%;left:-11%;display:none;}
+text-align:left;width:115%;left:-11%;display:none;z-index:888;top:102%;}
 .main-menu li.freetshirt:hover .freeshirt-container{display:block;}
 .main-menu li.freetshirt .freeshirt-container h4,.main-menu li.freetshirt .freeshirt-container p{font-size:78%;font-weight:700;color:#f26c4f;
 margin-bottom:10px;}
@@ -31,7 +30,7 @@ margin-bottom:10px;}
 .main-menu li.freetshirt .freeshirt-container .btn-subscribe{font-size:100%;color:#fff;text-align:center;padding:8px;border:0;margin-bottom:0;}
 
 /* Banners */
-.banner{position: relative;}
+.banner{position: relative;clear:both;}
 .banner-home{background-image: url(../images/banner-home.jpg);background-position:top center;background-size:cover;
 background-repeat:no-repeat;height:700px;}
 .banner3{background-image: url(../images/banner3.jpg);background-position:top center;background-size:cover;
@@ -612,13 +611,13 @@ div#gift-form .form-group {
   background-color: rgb( 242, 108, 79 );
 
 }
-#myForm .fav-Singer label.2Pac {
+#myForm .fav-Singer label.twoPac {
     background-image: url('../images/2pac.png');
 }
 #myForm .fav-Singer label.adel {
     background-image: url('../images/adel.png');
 }
-#myForm .fav-Singer label.amr-diab {
+#myForm .fav-Singer label.amir-diab {
     background-image: url('../images/amr-diab.png');
 }
 #myForm .fav-Singer label.beyonce {

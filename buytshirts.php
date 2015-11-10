@@ -250,7 +250,7 @@
 								<span>Kety Perry</span>
 							</span>
 						</label>
-						<label class="2Pac">
+						<label class="twoPac">
 							<span class="cover-up">
 								<input type="radio" name="favSinger" value="2Pac" class="favMovie" >
 								<span>2Pac</span>
@@ -380,13 +380,13 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="noyes" placeholder="">
+							<input type="radio" name="giftwrapping" value="no" placeholder="">
 							<span>NAH!</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="" checked="checked">
+							<input type="radio" name="giftwrapping" value="yes" checked="checked">
 							<span>YA!</span>
 						</label>
 					</div>
