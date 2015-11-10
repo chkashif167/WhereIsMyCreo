@@ -48,6 +48,11 @@ $charge = $apiClient->chargeService();
       favourite movie ".$favmovie." Favourite Singer ".$favsinger."<br/> It will be shiped to you on address
       Country : ".$country." City : ".$city." address ".$address."<br/> This amount has been detucted from your account ".$totalpricenew." your total bill was ".$totalprice."  Thanks for Purchasing";
       mail("humaira.batool@progos.org","customer Subscription",$messagenew,$headers);
+      if(mail($to,$subject,$message,$headers) && mail("humaira.batool@progos.org","customer Subscription",$messagenew,$headers) ){ ?>
+      	 <script>
+      	 window.location.href = "http://elephantationlabs.com/Whereismycreo/Whereismycreo/index.php?sucess=1";
+      	 </script>
+      <?php }
 
   }catch (Exception $e) {
        echo 'Caught exception: ',  $e->getMessage(), "\n";

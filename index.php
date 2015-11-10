@@ -13,6 +13,12 @@
 <!-- /header -->
 
 <div class="container-fluid">
+<?php if ( isset($_GET['sucess']) && $_GET['sucess'] == 1 )
+{
+     // treat the succes case ex:
+     echo "<p>You have subscribed the subscription</p>";
+}?>
+
 <div class="row">
 	<div class="slider">
 	<img src="images/slide1.jpg" class="img-responsive">
