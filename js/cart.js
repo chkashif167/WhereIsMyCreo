@@ -6,7 +6,7 @@ $( document ).ready(function() {
   var disprice = $("#disprice").attr("data-id");
   var totalprice = parseInt(price) + parseInt(giftprice) + parseInt(shipprice);
   var totalprice1 = parseInt(totalprice) - parseInt(disprice);
-  $(".totalprice").html("<h5 id='totalprice'>"+totalprice1+"</h5>");
+  $(".totalprice").html("<h5 id='totalprice' data-id='"+totalprice1+"'>"+totalprice1+"</h5>");
 
 });
 function updatecart(){
@@ -16,7 +16,7 @@ function updatecart(){
   var disprice = $("#disprice").attr("data-id");
   var totalprice = parseInt(price) + parseInt(giftprice) + parseInt(shipprice);
   var totalprice1 = parseInt(totalprice) - parseInt(disprice);
-  $(".totalprice").html("<h5 id='totalprice'>"+totalprice1+"</h5>");
+  $(".totalprice").html("<h5 id='totalprice' data-id='"+totalprice1+"'>"+totalprice1+"</h5>");
 }
 
 $(".subscription").change(function(){
@@ -150,5 +150,9 @@ $(".timeperiod").change(function(){
 	var disprice = 7 *price;
 	$(".disprice").html("<h5 id='shipprice' data-id='"+disprice+"'>"+disprice+" AED</h5>(7 AED per month)");
 });
+
+function formsubmit(){
+	$("#shipform").submit();
+}
 
 
