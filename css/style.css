@@ -203,11 +203,13 @@ text-transform: uppercase;line-height:1.5;}
     text-align: center;
     padding: 18px 0;
 }
+#myForm .gift-wrapping label,
 label.showhide{
 	display: block;
 	cursor: pointer;
 	
 }
+#myForm .gift-wrapping label span,
 label.showhide span {
     border-width: 3px;
     border-color: rgb( 56, 202, 191 );
@@ -235,6 +237,7 @@ input[type=radio]{
     z-index: 500;
     cursor: pointer;
 }
+#myForm .gift-wrapping label input[type=radio]:checked+span,
 .showhide input[type=radio]:checked+span {
   background-color: rgb( 56, 202, 191 );
   color: white;
@@ -654,4 +657,159 @@ div#gift-form .form-group {
 }
 #myForm .pay-Once label:nth-last-child(2){
 	margin-right: 0
+}
+#myForm .pay-Once label .cover-up div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -60px;
+    height: 50px;
+    width: 120px;
+    font-size: 25px;
+    color: rgb( 88, 88, 88 );
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+#myForm .pay-Once label .cover-up{
+    transition: all ease 300ms;
+}
+#myForm .pay-Once label .cover-up div b,
+#myForm .pay-Once label .cover-up div span{
+	display: block;
+
+}
+#myForm .pay-Once label .cover-up div b{
+	color: #f26c4f;
+}
+#myForm .pay-Once label.checked span.cover-up,
+#myForm .pay-Once label:hover span.cover-up{
+    background-color: rgba( 242, 108, 79, 0.9 );
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#myForm .pay-Once label.checked .cover-up div b,
+#myForm .pay-Once label.checked .cover-up div span,
+#myForm .pay-Once label:hover .cover-up div b,
+#myForm .pay-Once label:hover .cover-up div span{
+	color: #fff !important;
+}
+#myForm .pay-Once label.checked,
+#myForm .pay-Once label:hover{
+    border-color: rgba( 242, 108, 79, 0.9 );
+}
+/**/
+#myForm .pay-Monthly{
+	text-align: center;
+	padding: 70px 0
+}
+#myForm .pay-Monthly label {
+    display: inline-block;
+	width: 348px;
+	height: 132px;
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    margin:0 14px;
+    font-size: 37.5px;
+    color: rgb( 242, 108, 79 );
+    font-weight: bold;
+    text-transform: uppercase;
+    border-width: 4px;
+    border-color: rgb( 242, 108, 79 );
+    border-style: solid;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 300ms;
+    overflow: hidden;
+}
+#myForm .pay-Monthly label:nth-child(2){
+	margin-left: 0
+}
+#myForm .pay-Monthly label:nth-last-child(2){
+	margin-right: 0
+}
+#myForm .pay-Monthly label .cover-up{
+    transition: all ease 300ms;
+}
+#myForm .pay-Monthly label.checked span.cover-up,
+#myForm .pay-Monthly label:hover span.cover-up{
+    background-color: rgba( 242, 108, 79, 0.9 );
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#myForm .pay-Monthly label.checked,
+#myForm .pay-Monthly label:hover{
+    border-color: rgba( 242, 108, 79, 0.9 );
+}
+#myForm .pay-Monthly label .cover-up div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -90px;
+    height: 60px;
+    width: 180px;
+    font-size: 20px;
+    color: rgb( 88, 88, 88 );
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+#myForm .pay-Monthly label .cover-up div .price {
+	color: #f26c4f;
+	display: block;
+	
+}
+#myForm .pay-Monthly label .cover-up .tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#myForm .pay-Monthly label .cover-up .tag:after {
+    width: 0;
+    height: 0;
+    border-top: 70px solid #38cabf;
+    border-right: 80px solid transparent;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#myForm .pay-Monthly label .cover-up .tag b {
+	-webkit-transform: rotate(-39deg);
+	-ms-transform: rotate(-39deg);
+	transform: rotate(-39deg);
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    white-space: normal;
+    width: 50px;
+    padding: 12px 0 0 0px;
+}
+#myForm .pay-Monthly label.checked .cover-up div b,
+#myForm .pay-Monthly label.checked .cover-up div span,
+#myForm .pay-Monthly label:hover .cover-up div b,
+#myForm .pay-Monthly label:hover .cover-up div span{
+	color: #fff !important;
+}
+#myForm  .btn-checkout-big {
+    border-radius: 10px;
+    background-color: rgb( 56, 202, 191 );
+    font-size: 28px;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin: 50px auto;
+    border: 0;
+    width: 100%;
 }
