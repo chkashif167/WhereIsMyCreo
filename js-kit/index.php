@@ -1,3 +1,20 @@
+<?php
+    $mine = $_POST["mine"]; 
+    echo $mine;
+    $size = $_POST["size"];
+    $gender = $_POST["gender"];
+    $shirttype = $_POST["shirtypes"];
+    $favcolor = $_POST["color"];
+    $favmovie = $_POST["favmovie"];
+    $favsinger = $_POST["favsinger"];
+    $totalprice = $_POST["totalprice"];
+    echo $totalprice ;
+    $subscriptions = $_POST["subscriptions"];
+    echo $subscriptions;
+    $gifts = $_POST["gifts"];
+    echo $gifts;
+?>
+
 <?php include 'createpaymenttoken.php';?>
 <?php $token = $paymentToken->getId();?>
 <!DOCTYPE html>

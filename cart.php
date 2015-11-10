@@ -256,8 +256,69 @@ $giftwrapping = $_POST["giftwrapping"];
 
 	</tbody>
 </table>
-<div class="paymentmethod col-sm-6">
-	<div class="form-horizontal" action="" method="">
+<form class="paymentmethod col-sm-6" name="shipform" id="shipform"  action="js-kit/index.php" method="Post">
+	<input type="hidden" name="mine" value="<?php echo $giftfor ?>">
+	<input type="hidden" name="size" value="<?php echo $size ?>">
+	<input type="hidden" name="gender" value="<?php echo $gender ?>">
+	<input type="hidden" name="color" value="<?php echo $favcolor ?>">
+	<input type="hidden" name="shirtypes" value="<?php echo $shirttypes ?>">
+	<input type="hidden" name="favmovie" value="<?php echo $favmovie ?>">
+	<input type="hidden" name="favsinger" value="<?php echo $favsinger ?>">
+	<script>var totalprice = $("#totalprices").attr("data-id");
+	$("#totalprices").val(totalprice);</script>
+    <input type="hidden" name="totalprice" id="totalprices" value="123">
+    <script>var subscription = document.getElementById("subscription").value;
+    if( subscription == 89){
+	</script>
+    <input type="hidden" name="subscriptions" id="subscriptions" value="1 T-Shirt/Month">
+    <script>
+    }
+    else if(subscription == 82){
+    </script>
+    <input type="hidden" name="subscriptions" id="subscriptions" value="2 T-Shirt/Month">
+    <script>
+    }
+    else if(subscription == 75){
+    </script>
+    <input type="hidden" name="subscriptions" id="subscriptions" value="3 T-Shirt/Month">
+    <script>
+    }
+    else if(subscription == 3){
+    </script>
+    <input type="hidden" name="subscriptions" id="subscriptions" value="1 T-Shirt/3 Months">
+    <script>
+    }
+    else if(subscription == 6){
+    </script>
+    <input type="hidden" name="subscriptions" id="subscriptions" value="1 T-Shirt/6 Months">
+    <script>
+    }
+    else if(subscription == 9){
+    </script>
+    <input type="hidden" name="subscriptions" id="subscriptions" value="1 T-Shirt/9 Months">
+    <script>
+    }
+    else if(subscription == 12){
+    </script>
+    <input type="hidden" name="subscriptions" id="subscriptions" value="1 T-Shirt/1 Year">
+    <script>
+    }
+    </script>
+    <script>var gift = document.getElementById("wrapping").value;
+    if( gift == "yes"){
+	</script>
+	<input type="hidden" name="gifts" id="gifts" value="yes">
+    <script>
+    }
+    if( gift == "no"){
+    </script>
+    <input type="hidden" name="gifts" id="gifts" value="no">
+    <script>
+    }
+    </script>
+
+
+	<div class="form-horizontal">
 	<h4>Shipping Address</h4>
 	  <div class="form-group">
 	  <div class="col-sm-4"><label for="country">Country</label></div>
@@ -284,8 +345,8 @@ $giftwrapping = $_POST["giftwrapping"];
 	  <div class="col-sm-8"><input type="text" class="form-control" name="mobile" id="mobile" required></div>
 	  </div>
 	</div>
-	<button type="" class="btn-checkout">Place Your Order</button>
-</div>
+	<button type="" class="btn-checkout" onclick="formsubmit()">Place Your Order</button>
+</form>
 
 </div>
 <script type="text/javascript" src="js/cart.js"></script>
