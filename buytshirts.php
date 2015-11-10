@@ -242,31 +242,31 @@
 						<h2 class="fifth">My Favorite Singer</h2>
 						<label class="kety-perry">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="kety perry" class="favMovie" >
+								<input type="radio" name="favSinger" value="kety perry" class="favMovie" >
 								<span>Kety Perry</span>
 							</span>
 						</label>
 						<label class="2Pac">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="2Pac" class="favMovie" >
+								<input type="radio" name="favSinger" value="2Pac" class="favMovie" >
 								<span>2Pac</span>
 							</span>
 						</label>
 						<label class="beyonce">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="beyonce" class="favMovie" >
+								<input type="radio" name="favSinger" value="beyonce" class="favMovie" >
 								<span>Beyonce</span>
 							</span>
 						</label>
 						<label class="amir-diab">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="Amir Diab" class="favMovie" >
+								<input type="radio" name="favSinger" value="Amir Diab" class="favMovie" >
 								<span>Amir Diab</span>
 							</span>
 						</label>
 						<label class="adel">
 							<span class="cover-up">
-								<input type="radio" name="favMovie" value="adel" class="favMovie" >
+								<input type="radio" name="favSinger" value="adel" class="favMovie" >
 								<span>Adel</span>
 							</span>
 						</label>
@@ -325,12 +325,12 @@
 				<h2>GIFT WRAP IT?</h2>
 				<div class="col-sm-6">
 					<label>
-						<input type="radio" name="giftwrapping" value="noyes" placeholder="">
+						<input type="radio" name="giftwrapping" value="no" placeholder="">
 						NAH!</label>
 				</div>
 				<div class="col-sm-6">
 					<label>
-						<input type="radio" name="giftwrapping" value="" checked="checked">
+						<input type="radio" name="giftwrapping" value="yes" checked="checked">
 						YA!</label>
 				</div>
 			</div>
