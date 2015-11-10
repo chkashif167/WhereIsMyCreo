@@ -18,7 +18,6 @@
     else:
       $qty = 1;
     endif;
-
 ?>
 
 <?php include 'createpaymenttoken.php';?>
@@ -33,7 +32,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Checkout Form</title>
   <!--<link rel="stylesheet" href="css/style.css">
-  
+
     <link rel="stylesheet" href="css/colorpicker.css" type="text/css" />
     <link rel="stylesheet" media="screen" type="text/css" href="css/layout.css" />
     <title>ColorPicker - jQuery plugin</title>
