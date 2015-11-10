@@ -201,7 +201,7 @@ text-transform: uppercase;line-height:1.5;}
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    padding: 18px 0;
+    padding: 36px 0 36px;
 }
 #myForm .gift-wrapping label,
 label.showhide{
@@ -284,7 +284,7 @@ div#gift-form .form-group {
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 15px;
+    margin: 0 13px;
     font-size: 37.5px;
     color: rgb( 242, 108, 79 );
     font-weight: bold;
@@ -370,7 +370,7 @@ div#gift-form .form-group {
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 15px;
-    margin: 0 15px;
+    margin: 0 23px;
     font-size: 37.5px;
     color: rgb( 242, 108, 79 );
     font-weight: bold;
@@ -455,13 +455,13 @@ div#gift-form .form-group {
 /**/
 #myForm .fav-color label {
     display: inline-block;
-    width: 96px;
-    height: 81px;
+    width: 74px;
+    height: 67px;
     text-align: center;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 15px;
-    margin: 0 7px;
+    margin: 0 7.7px;
     font-size: 37px;
     color: rgb( 242, 108, 79 );
     font-weight: bold;
@@ -536,7 +536,7 @@ div#gift-form .form-group {
     font-weight: 700;
     font-size: 1.5em;
     border-radius: 10px;
-    margin: 14px auto 0 auto;
+    margin: 36px auto 0 auto;
     display: block;
     line-height: 1em;
 }
@@ -561,13 +561,13 @@ div#gift-form .form-group {
 #myForm .fav-Singer label,
 #myForm .fav-Movie label {
     display: inline-block;
-    width: 212px;
-    height: 159px;
+    width: 169px;
+    height: 146px;
     text-align: center;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;
-    margin:0 6.5px;
+    margin: 0px 6.8px;
     font-size: 37px;
     color: rgb( 242, 108, 79 );
     font-weight: bold;
@@ -630,17 +630,17 @@ div#gift-form .form-group {
 /**/
 #myForm .pay-Once{
 	text-align: center;
-	padding: 70px 0
+	padding: 70px 0 40px;
 }
 #myForm .pay-Once label {
     display: inline-block;
-	width: 260px;
-	height: 132px;
+    width: 204.5px;
+    height: 132px;
     text-align: center;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 15px;
-    margin:0 14px;
+    margin: 0 14px;
     font-size: 37.5px;
     color: rgb( 242, 108, 79 );
     font-weight: bold;
@@ -708,13 +708,13 @@ div#gift-form .form-group {
 }
 #myForm .pay-Monthly label {
     display: inline-block;
-	width: 348px;
-	height: 132px;
+    width: 283.5px;
+    height: 132px;
     text-align: center;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 15px;
-    margin:0 14px;
+    margin: 0 14px;
     font-size: 37.5px;
     color: rgb( 242, 108, 79 );
     font-weight: bold;
@@ -731,6 +731,37 @@ div#gift-form .form-group {
 	margin-left: 0
 }
 #myForm .pay-Monthly label:nth-last-child(2){
+	margin-right: 0
+}
+#myForm .size label:nth-child(2){
+	margin-left: 0
+}
+#myForm .size label:nth-last-child(2){
+	margin-right: 0
+}
+#myForm .shirttypes label:nth-child(2){
+	margin-left: 0
+}
+#myForm .shirttypes label:nth-last-child(2){
+	margin-right: 0
+}
+#myForm .fav-color label:nth-child(2){
+	margin-left: 0
+}
+#myForm .fav-color label:nth-last-child(3){
+	margin-right: 0
+}
+
+#myForm .fav-Movie label:nth-child(2){
+	margin-left: 0
+}
+#myForm .fav-Movie label:nth-last-child(2){
+	margin-right: 0
+}
+#myForm .fav-Singer label:nth-child(2){
+	margin-left: 0
+}
+#myForm .fav-Singer label:nth-last-child(2){
 	margin-right: 0
 }
 #myForm .pay-Monthly label .cover-up{
@@ -762,10 +793,21 @@ div#gift-form .form-group {
     text-transform: uppercase;
     text-align: center;
 }
+#myForm .pay-Monthly label:nth-child(2) .cover-up div {
+    height: 40px;
+    margin: -20px 0 0 -90px;
+}
 #myForm .pay-Monthly label .cover-up div .price {
 	color: #f26c4f;
 	display: block;
-	
+}
+#myForm .pay-Monthly label .cover-up div .price em {
+    color: rgb( 88, 88, 88 );
+	font-style: normal;
+}
+#myForm .pay-Monthly label.checked .cover-up div .price em,
+#myForm .pay-Monthly label:hover .cover-up div .price em {
+    color: #fff;
 }
 #myForm .pay-Monthly label .cover-up .tag {
     position: absolute;
@@ -812,4 +854,17 @@ div#gift-form .form-group {
     margin: 50px auto;
     border: 0;
     width: 100%;
+}
+form#myForm {
+    width: 70%;
+    padding-top: 20px;
+}
+form#myForm .error{
+	padding: 12px 0;
+	text-align: center;
+
+}
+form#myForm .error p{
+	font-size: 16px;
+	color:red;
 }

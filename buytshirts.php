@@ -105,7 +105,7 @@
 								<span>XL</span>
 							</span>
 						</label>
-						<div class="size-error" style="display:none;">
+						<div class="size-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 					</div>
@@ -135,7 +135,7 @@
 								<span>you choose for me</span>
 							</span>
 						</label>
-						<div class="shirttypes-error" style="display:none;">
+						<div class="shirttypes-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 					</div>
@@ -201,7 +201,7 @@
 								<span>Blue</span>
 							</span>
 						</label>
-						<div class="favcolor-error" style="display:none;">
+						<div class="favcolor-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 						<button type="button" class="btn btn-default btn-blind">im color blind <span class="img"></span></button>
@@ -238,7 +238,7 @@
 								<span>dispicable me</span>
 							</span>
 						</label>
-						<div class="favMovie-error" style="display:none;">
+						<div class="favMovie-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 					</div>
@@ -274,7 +274,7 @@
 								<span>Adel</span>
 							</span>
 						</label>
-						<div class="favSinger-error" style="display:none;">
+						<div class="favSinger-error error" style="display:none;">
 							<p>Please select one of the option</p>
 						</div>
 					</div>
@@ -333,7 +333,7 @@
 							</div>
 						</span>
 					</label>
-					<div class="payonce-error" style="display:none;">
+					<div class="payonce-error error" style="display:none;">
 						<p>Please select one of the option</p>
 					</div>
 				</div>
@@ -370,7 +370,7 @@
 							<span class="tag"><b>save 42 AED</b></span>
 						</span>
 					</label>
-					<div class="paymonthly-error" style="display:none;">
+					<div class="paymonthly-error error" style="display:none;">
 						<p>Please select one of the option</p>
 					</div>
 				</div>
