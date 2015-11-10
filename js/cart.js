@@ -7,6 +7,7 @@ $( document ).ready(function() {
   var totalprice = parseInt(price) + parseInt(giftprice) + parseInt(shipprice);
   var totalprice1 = parseInt(totalprice) - parseInt(disprice);
   $(".totalprice").html("<h5 id='totalprice' data-id='"+totalprice1+"'>"+totalprice1+"</h5>");
+  $("#shipform .total").html("<input type='hidden' name='totalprice' id='totalprices' value='"+totalprice1+"'>");
 
 });
 function updatecart(){
@@ -17,6 +18,7 @@ function updatecart(){
   var totalprice = parseInt(price) + parseInt(giftprice) + parseInt(shipprice);
   var totalprice1 = parseInt(totalprice) - parseInt(disprice);
   $(".totalprice").html("<h5 id='totalprice' data-id='"+totalprice1+"'>"+totalprice1+"</h5>");
+  $("#shipform .total").html("<input type='hidden' name='totalprice' id='totalprices' value='"+totalprice1+"'>");
 }
 
 $(".subscription").change(function(){
@@ -24,6 +26,7 @@ $(".subscription").change(function(){
 	var wrap = document.getElementById("wrapping").value;
 	if(price == 89){
      $(".pricenew").html("<h5 id='shirtprice' data-id='"+price+"'>"+price+" AED</h5>");
+     $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/Month'>");
      if(wrap == "yes"){
      $(".giftprice").html("<h5 id='giftprice' data-id='5'>5 AED</h5>(5 AED per month)");
      }
@@ -44,6 +47,7 @@ $(".subscription").change(function(){
 	 }
 	 $(".disprice").html("<h5 id='shipprice' data-id='7'>7 AED</h5>(7 AED per month)");
 	 $(".shipprice").html("<h5 id ='disprice' data-id='14'>14 AED</h5>");
+	 $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='2 T-Shirt/Month'>");
 	}
 	else if(price == 75){
 		var newprice = 89 * 3;
@@ -56,6 +60,7 @@ $(".subscription").change(function(){
 	 }
 	 $(".disprice").html("<h5 id='shipprice' data-id='7'>7 AED</h5>(7 AED per month)");
 	 $(".shipprice").html("<h5 id ='disprice' data-id='42'>42 AED</h5>");
+	 $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='3 T-Shirt/Month'>");
 	}
 	else{
 	var newprice = 89 * price;
@@ -64,18 +69,22 @@ $(".subscription").change(function(){
 	$(".timeperiod").html(
 	"<option value='3'>3 Months</option><option value='6'>6 Months</option><option value='9'>9 Months</option><option value='12'>1 Year</option>");
     $(".shipprice").html("<h5 id ='disprice' data-id='10.68'>10.68 AED</h5>");
+    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/3 Months'>");
     }
 	else if(price == 6){
 	$(".timeperiod").html("<option value='6'>6 Months</option><option value='3'>3 Months</option><option value='9'>9 Months</option><option value='12'>1 Year</option>");
     $(".shipprice").html("<h5 id ='disprice' data-id='42.72'>42.72 AED</h5>");
+    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/6 Months'>");
     }
 	else if(price == 9){
 	$(".timeperiod").html("<option value='9'>9 Months</option><option value='3'>3 Months</option><option value='6'>6 Months</option><option value='12'>1 Year</option>");
     $(".shipprice").html("<h5 id ='disprice' data-id='88.11'>88.11 AED</h5>");
+    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/9 Months'>");
     }
 	else if(price == 12){
 	$(".timeperiod").html("<option value='12'>1 Year</option><option value='3'>3 Months</option><option value='6'>6 Months</option><option value='9'>9 Months</option>");
 	$(".shipprice").html("<h5 id ='disprice' data-id='160.2'>160.2 AED</h5>");
+	$("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/1 Year'>");
 	}
 	if(wrap == "yes"){
 	var giftpric = 5 * price;
@@ -94,6 +103,7 @@ $(".wraping").change(function(){
 	var wrap = document.getElementById("wrapping").value;
     var price = document.getElementById("subscription").value;
 	if(wrap == "yes"){
+	$("#ship form .giftwrap").html("<input type='hidden' name='gifts' id='gifts' value='yes'>");
 	if(price == 89){
      $(".giftprice").html("<h5 id='giftprice' data-id='5'>5 AED</h5>(5 AED per month)");
      }
@@ -111,6 +121,7 @@ $(".wraping").change(function(){
 	}
 	else if(wrap == "no"){
 	$(".giftprice").html("<h5 id='giftprice' data-id='0'>0 AED</h5>(5 AED per month)");
+	$("#ship form .giftwrap").html("<input type='hidden' name='gifts' id='gifts' value='no'>");
 
 	}
 
@@ -127,18 +138,22 @@ $(".timeperiod").change(function(){
 	$(".subscription").html(
 	"<option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/ T-6 Months</option><option value='9'>1 T-Shirt/9 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
     $(".shipprice").html("<h5 id='disprice' data-id='10.68'>10.68 AED</h5>");
+    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/3 Month'>");
     }
 	else if(price == 6){
 	$(".subscription").html("<option value='6'>1 T-Shirt/6 Months</option><option value='3'>1 T-Shirt/3 Months</option><option value='9'>1 T-Shirt/9 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
     $(".shipprice").html("<h5 id='disprice' data-id='42.72'>42.72 AED</h5>");
+    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/6 Month'>");
     }
 	else if(price == 9){
 	$(".subscription").html("<option value='9'>1 T-Shirt/9 Months</option><option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/6 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
     $(".shipprice").html("<h5 id='disprice' data-id='88.11'>88.11 AED</h5>");
+    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/9 Month'>");
     }
 	else if(price == 12){
 	$(".subscription").html("<option value='12'>1 T-Shirt/1 Year</option><option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/6 Months</option><option value='9'>1 T-Shirt/9 Months</option>");
 	$(".shipprice").html("<h5 id='disprice' data-id='160.2'>160.2 AED</h5>");
+	$("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/1 Year'>");
 	}
 	if(wrap == "yes"){
 	var giftpric = 5 * price;

@@ -2,6 +2,7 @@
 namespace  com\checkout ;
 include 'checkout-php-library/autoload.php';
 
+
 $apiClient = new ApiClient('sk_test_f89deda7-f8df-4fe0-88af-0027b863a345','sandbox');
 //create an instance of a token service
 $tokenService = $apiClient->tokenService();
@@ -23,14 +24,14 @@ $product0->setQuantity($qty);
 //$product0->setSku('ABC123');
 $product0->setTrackingUrl('http://www.tracker.com');
 
-$phone->setNumber("203 583 44 55");
+$phone->setNumber($mobile);
 $phone->setCountryCode("44");
 
-$shippingDetails->setAddressLine1('1 Glading Fields');
-$shippingDetails->setAddressLine2('Apt 33');
-$shippingDetails->setPostcode('N16 2BR');
+$shippingDetails->setAddressLine1($address);
+//$shippingDetails->setAddressLine2('Apt 33');
+//$shippingDetails->setPostcode('N16 2BR');
 $shippingDetails->setCountry('GB');
-$shippingDetails->setCity('London');
+$shippingDetails->setCity($city);
 $shippingDetails->setPhone($phone);
 
 $tokenPayload->setTrackId("trak01254");
@@ -43,7 +44,7 @@ foreach($products as $id => $product){
 $tokenPayload->setCurrency("AED");
 $tokenPayload->setAutoCapture("Y");
 $tokenPayload->setAutoCapTime(0.0);
-$tokenPayload->setValue("500");
+$tokenPayload->setValue($totalpricenew);
 $tokenPayload->setCustomerIp("88.216.3.135");
 $tokenPayload->setDescription("test");
 $tokenPayload->setEmail("test@test.com");

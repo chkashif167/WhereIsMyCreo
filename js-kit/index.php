@@ -8,16 +8,35 @@
     $favsinger = $_POST["favsinger"];
     $totalprice = $_POST["totalprice"];
     $subscriptions = $_POST["subscriptions"];
+    //echo $subscriptions;
     $gifts = $_POST["gifts"];
-    if($subscriptions == 89):
+    if (strcmp($subscriptions, "1 T-Shirt/Month") == 0) :
       $qty = 1;
-    elseif($subscriptions == 82):
+    elseif(strcmp($subscriptions, "2 T-Shirt/Month") == 0):
       $qty=2;
-    elseif($subscriptions == 75):
+    elseif(strcmp($subscriptions, "3 T-Shirt/Month") == 0):
       $qty=3;
-    else:
+    elseif(strcmp($subscriptions, "1 T-Shirt/3 Months") == 0):
       $qty = 1;
+      $totalpricenew = $totalprice/3;
+    elseif(strcmp($subscriptions, "1 T-Shirt/6 Months") == 0):
+      $qty = 1;
+      $totalpricenew = $totalprice/6;
+    elseif(strcmp($subscriptions, "1 T-Shirt/9 Months") == 0):
+      $qty = 1;
+      $totalpricenew = $totalprice/9;
+    elseif(strcmp($subscriptions, "1 T-Shirt/1 Year") == 0):
+      $qty = 1;
+      $totalpricenew = $totalprice/12;
+    else:
+      $totalpricenew = $totalprice;
     endif;
+    $country = $_POST["country"];
+    $city = $_POST["city"];
+    $mobile = $_POST["mobile"];
+    $email = $_POST["email"];
+    $address = $_POST["address"];
+
 
 ?>
 
@@ -109,6 +128,8 @@
 
           <input type="hidden" id="expiry-year" class="checkout-input checkout-exp" data-checkout="expiry-year" value="">
 
+          
+
       </p>
       <p>
 
@@ -161,8 +182,23 @@
     <script  type="text/javascript" src="//sandbox.checkout.com/js/v1/checkoutkit.js" id="cko_script_tag" async data-namespace="CKOAPI" defer></script>
      <form class="" id="myForm2" method="post" action="verify.php" >
         <input type="hidden" class="cko-payment-token" name="cko-payment-token" value="<?php echo $token ;?>" >
-
-
+        <input type="hidden" id="size" name="size" value="<?php echo $size ?>">
+          <input type="hidden" id="gender" name="gender" value="<?php echo $gender ?>">
+          <input type="hidden" id="favcolor" name="favcolor" value="<?php echo $favcolor ?>">
+          <input type="hidden" id="favmovie" name="favmovie" value="<?php echo $favmovie ?>">
+          <input type="hidden" id="favsinger" name="favsinger" value="<?php echo $favsinger ?>">
+          <input type="hidden" id="mine" name="mine" value="<?php echo $mine ?>">
+          <input type="hidden" id="shirttypes" name="shirttypes" value="<?php echo $shirttype ?>">
+          <input type="hidden" id="subscription" name="subscription" value="<?php echo $subscriptions ?>">
+          <input type="hidden" id="country" name="country" value="<?php echo $country ?>">
+          <input type="hidden" id="city" name="city" value="<?php echo $city ?>">
+          <input type="hidden" id="mobile" name="mobile" value="<?php echo $mobile ?>">
+          <input type="hidden" id="email" name="email" value="<?php echo $email ?>">
+          <input type="hidden" id="address" name="address" value="<?php echo $address ?>">
+          <input type="hidden" id="quantity" name="quantity" value="<?php echo $qty ?>">
+          <input type="hidden" id="totalprice" name="totalprice" value="<?php echo $totalprice ?>">
+          <input type="hidden" id="totalpricenew" name="totalpricenew" value="<?php echo $totalpricenew ?>">
+          
      </form>
 </body>
 </html>
