@@ -38,22 +38,22 @@ if($('.gift').is(':checked') && $('.women').is(':checked')){
    $(".first").text("She wears a..");
    $(".second").text("She Likes..");
    $(".third").text("Her Favorite color is..");
-   $(".fourth").text("Her Favorite singer is..");
-   $(".fifth").text("Her Favorite movie is..");
+   $(".fourth").text("Her Favorite movie is..");
+   $(".fifth").text("Her Favorite singer is..");
 }
 if($('.gift').is(':checked') && $('.men').is(':checked')){
    $(".first").text("He wears a..");
    $(".second").text("He Likes..");
    $(".third").text("His Favorite color is..");
-   $(".fourth").text("His Favorite singer is..");
-   $(".fifth").text("His Favorite movie is..");
+   $(".fifth").text("His Favorite singer is..");
+   $(".fourth").text("His Favorite movie is..");
 }
 if($('.mine').is(':checked') && $('.women').is(':checked') || $('.mine').is(':checked') && $('.men').is(':checked')){
    $(".first").text("Give me");
    $(".second").text("Make it a");
    $(".third").text("My Favorite color is..");
-   $(".fourth").text("My Favorite singer is..");
-   $(".fifth").text("My Favorite movie is..");
+   $(".fourth").text("My Favorite movie is..");
+   $(".fifth").text("My Favorite singer is..");
 }
 });
 

@@ -153,52 +153,52 @@
 								<span>Black</span>
 							</span>
 						</label>
-						<label class="lightblue" style="border-color:lightblue;background-color:lightblue">
+						<label class="malibu" style="border-color:#6fabf6;background-color:#6fabf6">
 							<span class="cover-up">
-								<input type="radio" name="favcolor" value="lightblue" class="favcolor">
-								<span>Light Blue</span>
+								<input type="radio" name="favcolor" value="malibu" class="favcolor">
+								<span>Malibu</span>
 							</span>
 						</label>
-						<label class="darkblue" style="border-color:darkblue;background-color:darkblue">
+						<label class="spray" style="border-color:#80eae2;background-color:#80eae2">
 							<span class="cover-up">
-								<input type="radio" name="favcolor" value="darkblue" class="favcolor">
-								<span>Dark Blue</span>
+								<input type="radio" name="favcolor" value="spray" class="favcolor">
+								<span>Spray</span>
 							</span>
 						</label>
-						<label class="red" style="border-color:red;background-color:red">
+						<label class="rhino" style="border-color:#2a3252;background-color:#2a3252">
 							<span class="cover-up">
-								<input type="radio" name="favcolor" value="red" class="favcolor">
-								<span>Red</span>
+								<input type="radio" name="favcolor" value="rhino" class="favcolor">
+								<span>Rhino</span>
 							</span>
 						</label>
-						<label class="green" style="border-color:green;background-color:green">
+						<label class="wildwatermelon" style="border-color:#fe4f66;background-color:#fe4f66">
 							<span class="cover-up">
-								<input type="radio" name="favcolor" value="green" class="favcolor">
-								<span>Green</span>
+								<input type="radio" name="favcolor" value="wildwatermelon" class="favcolor">
+								<span>Light Red</span>
 							</span>
 						</label>
-						<label class="orange" style="border-color:orange;background-color:orange">
-							<span class="cover-up">
-								<input type="radio" name="favcolor" value="orange" class="favcolor">
-								<span>Orange</span>
-							</span>
-						</label>
-						<label class="lightgreen" style="border-color:lightgreen;background-color:lightgreen">
-							<span class="cover-up">
-								<input type="radio" name="favcolor" value="lightgreen" class="favcolor">
-								<span>Light Green</span>
-							</span>
-						</label>
-						<label class="yellow" style="border-color:yellow;background-color:yellow">
+						<label class="yellow" style="border-color:#ffe63c;background-color:#ffe63c">
 							<span class="cover-up">
 								<input type="radio" name="favcolor" value="yellow" class="favcolor">
 								<span>Yellow</span>
 							</span>
 						</label>
-						<label class="blue" style="border-color:blue;background-color:blue">
+						<label class="bilobaflower" style="border-color:#acabed;background-color:#acabed">
 							<span class="cover-up">
-								<input type="radio" name="favcolor" value="blue" class="favcolor">
-								<span>Blue</span>
+								<input type="radio" name="favcolor" value="bilobaflower" class="favcolor">
+								<span>Biloba Flower</span>
+							</span>
+						</label>
+						<label class="sushi" style="border-color:#8dc63f;background-color:#8dc63f">
+							<span class="cover-up">
+								<input type="radio" name="favcolor" value="sushi" class="favcolor">
+								<span>Sushi</span>
+							</span>
+						</label>
+						<label class="orange" style="border-color:#f7941d;background-color:#f7941d">
+							<span class="cover-up">
+								<input type="radio" name="favcolor" value="orange" class="favcolor">
+								<span>Orange</span>
 							</span>
 						</label>
 						<div class="favcolor-error error" style="display:none;">
