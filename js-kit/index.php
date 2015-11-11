@@ -9,29 +9,32 @@
     $totalprice = $_POST["totalprice"];
     $subscriptions = $_POST["subscriptions"];
     //echo $subscriptions;
+    //echo $subscriptions;
     $gifts = $_POST["gifts"];
     if (strcmp($subscriptions, "1 T-Shirt/Month") == 0) :
       $qty = 1;
+      $totalpricenew = $totalprice;
     elseif(strcmp($subscriptions, "2 T-Shirt/Month") == 0):
       $qty=2;
+      $totalpricenew = $totalprice;
     elseif(strcmp($subscriptions, "3 T-Shirt/Month") == 0):
       $qty=3;
+      $totalpricenew = $totalprice;
     elseif(strcmp($subscriptions, "1 T-Shirt/3 Months") == 0):
       $qty = 1;
-      $totalpricenew = $totalprice/3;
+      $totalpricenew = intval($totalprice/3);
     elseif(strcmp($subscriptions, "1 T-Shirt/6 Months") == 0):
       $qty = 1;
-      $totalpricenew = $totalprice/6;
+      $totalpricenew = intval($totalprice/6);
     elseif(strcmp($subscriptions, "1 T-Shirt/9 Months") == 0):
       $qty = 1;
-      $totalpricenew = $totalprice/9;
+      $totalpricenew = intval($totalprice/9);
     elseif(strcmp($subscriptions, "1 T-Shirt/1 Year") == 0):
       $qty = 1;
-      $totalpricenew = $totalprice/12;
-    else:
-      $totalpricenew = $totalprice;
+      $totalpricenew = intval($totalprice/12);
     endif;
-
+    $totalpricenew = $totalpricenew+"000";
+    echo $$totalpricenew;
     $country = $_POST["country"];
     $city = $_POST["city"];
     $mobile = $_POST["mobile"];

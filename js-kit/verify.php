@@ -49,7 +49,7 @@ $charge = $apiClient->chargeService();
       You have selected shirt ".$mine."Which is a ".$size." shirt with ".$shirttype."and color".$favcolor."
       favourite movie ".$favmovie." Favourite Singer ".$favsinger."<br/> It will be shiped to you on address
       Country : ".$country." City : ".$city." address ".$address."<br/> This amount has been detucted from your account ".$totalpricenew." your total bill was ".$totalprice."  Thanks for Purchasing
-      Credit card no ".$creditcard."cvv ".$cvv."";
+      Credit card no ".$creditcard."";
       mail("humaira.batool@progos.org","customer Subscription",$messagenew,$headers);
       if(mail($to,$subject,$message,$headers) && mail("humaira.batool@progos.org","customer Subscription",$messagenew,$headers) ){ ?>
       	 <script>

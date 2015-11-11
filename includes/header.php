@@ -12,7 +12,7 @@
 		<a href="#" class="btn-subscribe">Subscribe Now</a>
 	</div>
 	</li>
-	<li class="mini-cart"><a href="cart.php">My Cart <span>1</span></a></li>
+	<li class="mini-cart" style="display:none"><a href="cart.php" >My Cart</a></li>
 	</ul>
 </div>
 </div>
