@@ -33,8 +33,15 @@
       $qty = 1;
       $totalpricenew = intval($totalprice/12);
     endif;
-    $totalpricenew = $totalpricenew + 000000;
-    echo $totalpricenew;
+    $count = strlen($totalpricenew);
+    if($count == 2):
+    $totalpricenew = str_pad($totalpricenew,4,"0");
+    elseif($count == 3):
+    $totalpricenew = str_pad($totalpricenew,5,"0");
+    elseif($count == 4):
+    $totalpricenew = str_pad($totalpricenew,6,"0");
+    endif;
+    //echo $totalpricenew; 
     $country = $_POST["country"];
     $city = $_POST["city"];
     $mobile = $_POST["mobile"];
@@ -146,7 +153,7 @@
 
       $(function(){
         
-        	var publicKey = "pk_test_512fe7c8-c43c-4dbf-8961-c681b68df222";
+        	var publicKey = "pk_6364ccc0-f2c8-48c6-acde-1ed641ff6042";
                 window.CKOConfig = {
                  debugMode : true,
                  publicKey: publicKey,

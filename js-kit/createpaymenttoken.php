@@ -3,7 +3,7 @@ namespace  com\checkout ;
 include 'checkout-php-library/autoload.php';
 
 
-$apiClient = new ApiClient('sk_test_f89deda7-f8df-4fe0-88af-0027b863a345','sandbox');
+$apiClient = new ApiClient('sk_103764da-6f8b-443d-8bef-66454522b6b0','live');
 //create an instance of a token service
 $tokenService = $apiClient->tokenService();
 //initializing the request models
