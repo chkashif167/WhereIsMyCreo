@@ -34,13 +34,13 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="giftmine" value="mine" data-id="mine" checked="checked" class="mine">
+							<input type="radio" name="giftmine" value="mine" data-id="mine" required class="mine">
 							<span>Is Mine</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="giftmine" value="gift" data-id="gift-form" class="gift">
+							<input type="radio" name="giftmine" value="gift" data-id="gift-form" required  class="gift">
 							<span>IS A GIFT</span>
 						</label>
 					</div>
@@ -67,13 +67,13 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="gender" value="man" data-id="man" checked="checked" class="men">
+							<input type="radio" name="gender" value="man" data-id="man" required class="men">
 							<span>Man</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="gender" value="woman" data-id="women" class ="women">
+							<input type="radio" name="gender" value="woman" data-id="women" required class ="women">
 							<span>Women</span>
 						</label>
 					</div>
@@ -285,13 +285,13 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="paytype" value="once" data-id="payOnce" checked="checked" class="payonce">
+							<input type="radio" name="paytype" value="once" data-id="payOnce" required class="payonce">
 							<span>Once</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="paytype" value="monthly" data-id="payMonthly" class="paymonthly">
+							<input type="radio" name="paytype" value="monthly" data-id="payMonthly" required class="paymonthly">
 							<span>Monthly</span>
 						</label>
 					</div>
@@ -380,13 +380,13 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="no" placeholder="">
+							<input type="radio" name="giftwrapping" value="no" placeholder="" required>
 							<span>NAH!</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="yes" checked="checked">
+							<input type="radio" name="giftwrapping" value="yes" required>
 							<span>YA!</span>
 						</label>
 					</div>

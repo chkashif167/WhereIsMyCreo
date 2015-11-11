@@ -173,19 +173,19 @@ $(".timeperiod").change(function(){
 	$(".mini-cart").show();
 	if(price == 3){
 	$(".subscription").html(
-	"<option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/ T-6 Months</option><option value='9'>1 T-Shirt/9 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
+	"<option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/6 Months</option><option value='9'>1 T-Shirt/9 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
     $(".shipprice").html("<h5 id='disprice' data-id='10.68'>10.68 AED</h5>");
-    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/3 Month'>");
+    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/3 Months'>");
     }
 	else if(price == 6){
 	$(".subscription").html("<option value='6'>1 T-Shirt/6 Months</option><option value='3'>1 T-Shirt/3 Months</option><option value='9'>1 T-Shirt/9 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
     $(".shipprice").html("<h5 id='disprice' data-id='42.72'>42.72 AED</h5>");
-    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/6 Month'>");
+    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/6 Months'>");
     }
 	else if(price == 9){
 	$(".subscription").html("<option value='9'>1 T-Shirt/9 Months</option><option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/6 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
     $(".shipprice").html("<h5 id='disprice' data-id='88.11'>88.11 AED</h5>");
-    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/9 Month'>");
+    $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/9 Months'>");
     }
 	else if(price == 12){
 	$(".subscription").html("<option value='12'>1 T-Shirt/1 Year</option><option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/6 Months</option><option value='9'>1 T-Shirt/9 Months</option>");
