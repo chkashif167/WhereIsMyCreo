@@ -380,13 +380,13 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="no" placeholder="" required>
+							<input type="radio" name="giftwrapping" value="no" placeholder="" required="true">
 							<span>NAH!</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="yes" required>
+							<input type="radio" name="giftwrapping" value="yes" required="true" checked="checked">
 							<span>YA!</span>
 						</label>
 					</div>

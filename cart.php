@@ -339,7 +339,7 @@ $giftwrapping = $_POST["giftwrapping"];
 	  <div class="col-sm-8"><input type="text" class="form-control" name="mobile" id="mobile" required></div>
 	  </div>
 	</div>
-	<label class="order"><button type="" class="btn-checkout" onclick="formsubmit()">Place Your Order</button></label>
+	<label class="order"><button type="submit" class="btn-checkout">Place Your Order</button></label>
 </form>
 
 </div>
