@@ -355,11 +355,7 @@ $giftwrapping = $_POST["giftwrapping"];
 	  <div class="col-sm-8"><input type="text" class="form-control" name="mobile" id="mobile" required></div>
 	  </div>
 	</div>
-<<<<<<< HEAD
-	<label class="order"><button type="submit" class="btn-checkout" >Place Your Order</button></label>
-=======
 	<label class="order"><button type="submit" class="btn-checkout">Place Your Order</button></label>
->>>>>>> e4195cc8836b46bad59d4f305e8c5b7cb0b93c01
 </form>
 
 </div>
