@@ -34,17 +34,18 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="giftmine" value="mine" data-id="mine" required class="mine">
+							<input type="radio" name="giftmine" value="mine" data-id="mine" class="mine">
 							<span>Is Mine</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="giftmine" value="gift" data-id="gift-form" required  class="gift">
+							<input type="radio" name="giftmine" value="gift" data-id="gift-form"  class="gift">
 							<span>IS A GIFT</span>
 						</label>
 					</div>
 				</div>
+				<div class="mine-error error" style="display:none"><p>Please Select one of the options</p></div>
 				<div class="gift-form" style="display:none;" id="gift-form">
 					<div class="row">
 						<div class="col-sm-12">
@@ -67,17 +68,18 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="gender" value="man" data-id="man" required class="men">
+							<input type="radio" name="gender" value="man" data-id="man"  class="men">
 							<span>Man</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="gender" value="woman" data-id="women" required class ="women">
+							<input type="radio" name="gender" value="woman" data-id="women"  class ="women">
 							<span>Women</span>
 						</label>
 					</div>
 				</div>
+				<div class="gender-error error" style="display:none"><p>Please Select one of the options</p></div>
 				<div class="women" id="women" style="display:none;">
 					<div class="size">
 						<h2 class="first">Give Me</h2>
@@ -285,17 +287,18 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="paytype" value="once" data-id="payOnce" required class="payonce">
+							<input type="radio" name="paytype" value="once" data-id="payOnce" class="payonce">
 							<span>Once</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="showhide">
-							<input type="radio" name="paytype" value="monthly" data-id="payMonthly" required class="paymonthly">
+							<input type="radio" name="paytype" value="monthly" data-id="payMonthly"  class="paymonthly">
 							<span>Monthly</span>
 						</label>
 					</div>
 				</div>
+				<div class="payonceerror error" style="display:none"><p>Please Select one of the options</p></div>
 				<div class="pay-Once" style="display:none;" id="payOnce">
 					<label>
 						<span class="cover-up">
@@ -380,20 +383,22 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="yes" required="true" checked="checked">
+							<input type="radio" name="giftwrapping" value="yes">
 							<span>I want to take a picture and show my friends</span>
 							<i class="tag"><b>5 AED</b></i>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="no" placeholder="" required="true">
+							<input type="radio" name="giftwrapping" value="no" placeholder="">
 							<span>no wrapping im a busy person</span>
 						</label>
 					</div>
 
 				</div>
 			</div>
+			<div class="giftwrapping-error error" style="display:none"><p>Please Select one of the options</p></div>
+
 			<button type="submit" class="btn btn-default btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
 		</form>
 	</section>

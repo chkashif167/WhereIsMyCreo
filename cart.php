@@ -91,8 +91,24 @@ $giftwrapping = $_POST["giftwrapping"];
 	<td>
 	<h4>subscription duration:</h4>
 	<div class="date">
-	<h4>start date: <span><?php echo date("Y/m/d") ?></span></h4>
-	<h4>end date: <span>24-jan-2016</span></h4>
+    <?php $date = date("Y-m-d"); ?>
+	<h4>start date: <span><?php echo date("Y-m-d") ?></span></h4>
+	<?php if($payOnce == 89 || $payOnce == 82 || $payOnce == 75):?>
+	<?php $effectiveDate = date('Y-m-d', strtotime("+30 days", strtotime($date))); ?>
+	<h4>end date: <span><?php echo $effectiveDate ?></span></h4>
+	<?php elseif($payOnce == 4):?>
+	<?php $effectiveDate = date('Y-m-d', strtotime("+3 months", strtotime($date))); ?>
+	<h4>end date: <span><?php echo $effectiveDate ?></span></h4>
+	<?php elseif($payOnce == 8):?>
+	<?php $effectiveDate = date('Y-m-d', strtotime("+6 months", strtotime($date))); ?>
+	<h4>end date: <span><?php echo $effectiveDate ?></span></h4>
+	<?php elseif($payOnce == 11):?>
+	<?php $effectiveDate = date('Y-m-d', strtotime("+9 months", strtotime($date))); ?>
+	<h4>end date: <span><?php echo $effectiveDate ?></span></h4>
+	<?php elseif($payOnce == 15):?>
+	<?php $effectiveDate = date('Y-m-d', strtotime("+12 months", strtotime($date))); ?>
+	<h4>end date: <span><?php echo $effectiveDate ?></span></h4>
+    <?php endif; ?>
 	</div>
 	</td>
 	<td>
@@ -166,10 +182,10 @@ $giftwrapping = $_POST["giftwrapping"];
 	<td class="giftprice" align="right"><h5 id="giftprice" data-id="5">5 AED</h5>(5 AED per month)</td>
     <?php elseif($payOnce == 82):?>
     <?php $gift = 5 * 2 ?>
-    <td class="giftprice" align="right"><h5 id="giftprice" data-id="<?php echo $gift ;?>"><?php echo $gift ;?> AED</h5>(5 AED per month)</td>
+    <td class="giftprice" align="right"><h5 id="giftprice" data-id="5">5 AED</h5>(5 AED per month)</td>
     <?php elseif($payOnce == 75):?>
     <?php $gift = 5 * 3 ?>
-    <td class="giftprice" align="right"><h5 id="giftprice" data-id="<?php echo $gift ;?>"><?php echo $gift ;?> AED</h5>(5 AED per month)</td>
+    <td class="giftprice" align="right"><h5 id="giftprice" data-id="5">5 AED</h5>(5 AED per month)</td>
     <?php elseif($payOnce == 4):?>
     <?php $gift = 5 * 3 ?>
     <td class="giftprice" align="right"><h5 id="giftprice" data-id="<?php echo $gift ;?>"><?php echo $gift ;?> AED</h5>(5 AED per month)</td>

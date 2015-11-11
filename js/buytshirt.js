@@ -61,8 +61,20 @@ if($('.mine').is(':checked') && $('.women').is(':checked') || $('.mine').is(':ch
 $('.btn-checkout-big').click(function() { 
 if(!$("input[name='size']:checked").val() || !$("input[name='shirttypes']:checked").val() ||
    !$("input[name='favcolor']:checked").val() || !$("input[name='favSinger']:checked").val() ||
-   !$("input[name='favMovie']:checked").val() || !$("input[name='payOnce']:checked").val()){
-    if($('.women').is(':checked') || $('.men').is(':checked') ){
+   !$("input[name='favMovie']:checked").val() || !$("input[name='payOnce']:checked").val() 
+    || !$("input[name='giftmine']:checked").val() || !$("input[name='gender']:checked").val() ||
+    !$("input[name='giftmine']:checked").val() || !$("input[name='paytype']:checked").val() ||
+    !$("input[name='giftwrapping']:checked").val()  ){
+
+     if (!$("input[name='giftmine']:checked").val()) {
+        $(".mine-error").show();
+      }
+    else{
+      $(".mine-error").hide();
+    }
+   
+    if($('.women').is(':checked') || $('.men').is(':checked')){
+      $(".gender-error").hide();
      if (!$("input[name='size']:checked").val()) {
     		$(".size-error").show();
     	}
@@ -94,7 +106,16 @@ if(!$("input[name='size']:checked").val() || !$("input[name='shirttypes']:checke
     	$(".favMovie-error").hide();
     }
         $("#women").show();
-     }
+    }
+    else if(!$('.women').is(':checked') || !$('.men').is(':checked')){
+     $(".gender-error").show();
+      }
+    else{
+      $(".gender-error").hide();
+    }
+
+    if($('.payonce').is(':checked') || $('.paymonthly').is(':checked')){
+      $(".payonceerror").hide();
     if($('.payonce').is(':checked')){
 
     	if (!$("input[name='payOnce']:checked").val() ) {
@@ -115,6 +136,20 @@ if(!$("input[name='size']:checked").val() || !$("input[name='shirttypes']:checke
     }
     	$(".payMonthly").show(); 
     }
+  } 
+  else if(!$('.payonce').is(':checked') || !$('.paymonthly').is(':checked')){
+    $(".payonceerror").show();
+  }
+  else{
+    $(".payonceerror").hide();
+  }
+
+  if(!$("input[name='giftwrapping']:checked").val()){
+    $(".giftwrapping-error").show();
+  }
+  else{
+    $(".giftwrapping-error").hide();
+  }
 }
 else {
 	 	

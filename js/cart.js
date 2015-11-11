@@ -58,12 +58,13 @@ $(".subscription").change(function(){
 	 $(".shipprice").html("<h5 id ='disprice' data-id='0'>0 AED</h5>");
 	 $(".mini-cart").html("<a href='cart.php'>My Cart <span>1</span></a>");
 	 $(".mini-cart").show();
+	 
 	}
 	else if(price == 82){
 	var newprice = 89 * 2;
      $(".pricenew").html("<h5 id='shirtprice' data-id='"+newprice+"'>"+newprice+" AED</h5>");
      if(wrap == "yes"){
-     $(".giftprice").html("<h5 id='giftprice' data-id='10'>10 AED</h5>(5 AED per month)");
+     $(".giftprice").html("<h5 id='giftprice' data-id='5'>5 AED</h5>(5 AED per month)");
      }
      else if(wrap == "no"){
      $(".giftprice").html("<h5 id='giftprice' data-id='0'>0 AED</h5>(5 AED per month)");
@@ -72,13 +73,13 @@ $(".subscription").change(function(){
 	 $(".shipprice").html("<h5 id ='disprice' data-id='14'>14 AED</h5>");
 	 $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='2 T-Shirt/Month'>");
 	$(".mini-cart").html("<a href='cart.php'>My Cart <span>2</span></a>");
-	$(".mini-cart").show();
+	$(".mini-cart").show()
 	}
 	else if(price == 75){
 		var newprice = 89 * 3;
      $(".pricenew").html("<h5 id='shirtprice' data-id='"+newprice+"'>"+newprice+" AED</h5>");
      if(wrap == "yes"){
-     $(".giftprice").html("<h5 id='giftprice' data-id='15'>15 AED</h5>(5 AED per month)");
+     $(".giftprice").html("<h5 id='giftprice' data-id='5'>5 AED</h5>(5 AED per month)");
      }
      else if(wrap == "no"){
      $(".giftprice").html("<h5 id='giftprice' data-id='0'>0 AED</h5>(5 AED per month)");
@@ -97,21 +98,25 @@ $(".subscription").change(function(){
 	"<option value='3'>3 Months</option><option value='6'>6 Months</option><option value='9'>9 Months</option><option value='12'>1 Year</option>");
     $(".shipprice").html("<h5 id ='disprice' data-id='10.68'>10.68 AED</h5>");
     $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/3 Months'>");
+   
     }
 	else if(price == 6){
 	$(".timeperiod").html("<option value='6'>6 Months</option><option value='3'>3 Months</option><option value='9'>9 Months</option><option value='12'>1 Year</option>");
     $(".shipprice").html("<h5 id ='disprice' data-id='42.72'>42.72 AED</h5>");
     $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/6 Months'>");
+
     }
 	else if(price == 9){
 	$(".timeperiod").html("<option value='9'>9 Months</option><option value='3'>3 Months</option><option value='6'>6 Months</option><option value='12'>1 Year</option>");
     $(".shipprice").html("<h5 id ='disprice' data-id='88.11'>88.11 AED</h5>");
     $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/9 Months'>");
+    
     }
 	else if(price == 12){
 	$(".timeperiod").html("<option value='12'>1 Year</option><option value='3'>3 Months</option><option value='6'>6 Months</option><option value='9'>9 Months</option>");
 	$(".shipprice").html("<h5 id ='disprice' data-id='160.2'>160.2 AED</h5>");
 	$("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/1 Year'>");
+	
 	}
 	if(wrap == "yes"){
 	var giftpric = 5 * price;
@@ -140,10 +145,10 @@ $(".wraping").change(function(){
      $(".giftprice").html("<h5 id='giftprice' data-id='5'>5 AED</h5>(5 AED per month)");
      }
     else if(price == 82){
-     $(".giftprice").html("<h5 id='giftprice' data-id='10'>10 AED</h5>(5 AED per month)");
+     $(".giftprice").html("<h5 id='giftprice' data-id='5'>5 AED</h5>(5 AED per month)");
      }
      else if(price == 75){
-     $(".giftprice").html("<h5 id='giftprice' data-id='15'>15 AED</h5>(5 AED per month)");
+     $(".giftprice").html("<h5 id='giftprice' data-id='5'>5 AED</h5>(5 AED per month)");
      }
      else{
      var giftprice = price * 5;
@@ -176,21 +181,25 @@ $(".timeperiod").change(function(){
 	"<option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/6 Months</option><option value='9'>1 T-Shirt/9 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
     $(".shipprice").html("<h5 id='disprice' data-id='10.68'>10.68 AED</h5>");
     $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/3 Months'>");
+    
     }
 	else if(price == 6){
 	$(".subscription").html("<option value='6'>1 T-Shirt/6 Months</option><option value='3'>1 T-Shirt/3 Months</option><option value='9'>1 T-Shirt/9 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
     $(".shipprice").html("<h5 id='disprice' data-id='42.72'>42.72 AED</h5>");
     $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/6 Months'>");
+    
     }
 	else if(price == 9){
 	$(".subscription").html("<option value='9'>1 T-Shirt/9 Months</option><option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/6 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
     $(".shipprice").html("<h5 id='disprice' data-id='88.11'>88.11 AED</h5>");
     $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/9 Months'>");
+    
     }
 	else if(price == 12){
 	$(".subscription").html("<option value='12'>1 T-Shirt/1 Year</option><option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/6 Months</option><option value='9'>1 T-Shirt/9 Months</option>");
 	$(".shipprice").html("<h5 id='disprice' data-id='160.2'>160.2 AED</h5>");
 	$("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/1 Year'>");
+	
 	}
 	if(wrap == "yes"){
 	var giftpric = 5 * price;
