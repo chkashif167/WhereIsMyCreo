@@ -231,6 +231,7 @@ $giftwrapping = $_POST["giftwrapping"];
 	  <td rowspan="2">
 		<button type="" class="btn-cart-alt" onclick="updatecart()">Update Cart</button>
 		<button type="" class="btn-cart">Proceed to checkout</button>	</td>
+		
 	  <td align="right"><h4>Discount:</h4></td>
 	 <?php if($payOnce == 89):?>
 	 <td class="shipprice" align="right"><h5 id="disprice" data-id="0">0 AED</h5></td>
@@ -249,13 +250,18 @@ $giftwrapping = $_POST["giftwrapping"];
     <?php endif ?>
     <td class="shipprice" align="right" style="display:none"></td>
 	  </tr>
+	
 	<tr class="totals">
 	<td align="right"><h4>Total:</h4></td>
 	<td class="totalprice" align="right"></td>
 	</tr>
+	<tr class="totals">
+	<td class="update-cart" style="display:none"></td>
+	</tr>
 
 	</tbody>
 </table>
+
 <form class="paymentmethod col-sm-6" name="shipform" id="shipform"  action="js-kit/index.php" method="Post">
 	<input type="hidden" name="mine" value="<?php echo $giftfor ?>">
 	<input type="hidden" name="size" value="<?php echo $size ?>">
@@ -329,7 +335,7 @@ $giftwrapping = $_POST["giftwrapping"];
 	  <div class="col-sm-8"><input type="text" class="form-control" name="mobile" id="mobile" required></div>
 	  </div>
 	</div>
-	<button type="" class="btn-checkout" onclick="formsubmit()">Place Your Order</button>
+	<label class="order"><button type="" class="btn-checkout" onclick="formsubmit()">Place Your Order</button></label>
 </form>
 
 </div>

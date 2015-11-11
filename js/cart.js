@@ -34,11 +34,17 @@ function updatecart(){
   var totalprice1 = parseInt(totalprice) - parseInt(disprice);
   $(".totalprice").html("<h5 id='totalprice' data-id='"+totalprice1+"'>"+totalprice1+"</h5>");
   $("#shipform .total").html("<input type='hidden' name='totalprice' id='totalprices' value='"+totalprice1+"'>");
+  $(".update-cart").hide();
+  $(".order").html("<button type='' class='btn-checkout' onclick='formsubmit()'>Place Your Order</button>");
 }
 
 $(".subscription").change(function(){
 	var price = document.getElementById("subscription").value;
 	var wrap = document.getElementById("wrapping").value;
+	$(".update-cart").html("<p>Update your cart</p>");
+	$(".order").html("<button type='' class='btn-checkout' onclick='formsubmit()' disabled >Place Your Order</button>");
+	$(".update-cart").show();
+
 	if(price == 89){
      $(".pricenew").html("<h5 id='shirtprice' data-id='"+price+"'>"+price+" AED</h5>");
      $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='1 T-Shirt/Month'>");
@@ -125,6 +131,9 @@ $(".wraping").change(function(){
 
 	var wrap = document.getElementById("wrapping").value;
     var price = document.getElementById("subscription").value;
+    $(".update-cart").html("<p>Update your cart</p>");
+	$(".order").html("<button type='' class='btn-checkout' onclick='formsubmit()' disabled >Place Your Order</button>");
+	$(".update-cart").show();
 	if(wrap == "yes"){
 	$("#ship form .giftwrap").html("<input type='hidden' name='gifts' id='gifts' value='yes'>");
 	if(price == 89){
@@ -155,6 +164,9 @@ $(".wraping").change(function(){
 $(".timeperiod").change(function(){
 	var price = document.getElementById("timeperiod").value;
 	var wrap = document.getElementById("wrapping").value;
+	$(".update-cart").html("<p>Update your cart</p>");
+	$(".update-cart").show();
+	$(".order").html("<button type='' class='btn-checkout' onclick='formsubmit()' disabled >Place Your Order</button>");
 	var newprice = 89 * price;
 	$(".pricenew").html("<h5 id='shirtprice' data-id='"+newprice+"'>"+newprice+" AED</h5>");
 	$(".mini-cart").html("<a href='cart.php'>My Cart <span>1</span></a>");
