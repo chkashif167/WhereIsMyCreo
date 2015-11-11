@@ -380,16 +380,18 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="no" placeholder="" required="true">
-							<span>NAH!</span>
+							<input type="radio" name="giftwrapping" value="yes" required="true" checked="checked">
+							<span>I want to take a picture and show my friends</span>
+							<i class="tag"><b>5 AED</b></i>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-							<input type="radio" name="giftwrapping" value="yes" required="true" checked="checked">
-							<span>YA!</span>
+							<input type="radio" name="giftwrapping" value="no" placeholder="" required="true">
+							<span>no wrapping im a busy person</span>
 						</label>
 					</div>
+
 				</div>
 			</div>
 			<button type="submit" class="btn btn-default btn-checkout-big">CHECK OUT. YOU’RE ALL DONE HERE.</button>
