@@ -45,26 +45,21 @@
 <?php include 'createpaymenttoken.php';?>
 <?php $token = $paymentToken->getId();?>
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Checkout Form</title>
-  <!--<link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="css/colorpicker.css" type="text/css" />
-    <link rel="stylesheet" media="screen" type="text/css" href="css/layout.css" />
-    <title>ColorPicker - jQuery plugin</title>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/colorpicker.js"></script>
-    <script type="text/javascript" src="js/eye.js"></script>
-    <script type="text/javascript" src="js/utils.js"></script>
-    <script type="text/javascript" src="js/layout.js?ver=1.0.2"></script> 
-    <script type="text/javascript" src="js/prettyprint.js"></script>-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript" src="../js/fontsmoothie.min.js"></script>
+<script type="text/javascript" src="../basic-jquery-validation-form/jquery.validate.min.js"></script>
+<title>Where Is My Creo | Checkout</title>
 </head>
+<body>
 <body>
   <?php if(@$showError): ?>
   <div class="lightbox error">
