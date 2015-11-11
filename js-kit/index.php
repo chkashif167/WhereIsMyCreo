@@ -33,8 +33,8 @@
       $qty = 1;
       $totalpricenew = intval($totalprice/12);
     endif;
-    $totalpricenew = $totalpricenew+"000";
-    echo $$totalpricenew;
+    $totalpricenew = $totalpricenew + 000000;
+    echo $totalpricenew;
     $country = $_POST["country"];
     $city = $_POST["city"];
     $mobile = $_POST["mobile"];

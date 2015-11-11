@@ -12,14 +12,17 @@ $( document ).ready(function() {
   if(price == 89 || price == 3 || price == 6 || price == 9 || price == 12){
   	var qty = 1;
   	$(".mini-cart").html("<a href='cart.php'>My Cart <span>1</span></a>");
+  	$(".mini-cart").show();
   }
   else if(price == 82){
   	var qty = 2;
   	$(".mini-cart").html("<a href='cart.php'>My Cart <span>2</span></a>");
+  	$(".mini-cart").show();
   }
   else if(price == 75){
   	var qty = 3;
   	$(".mini-cart").html("<a href='cart.php'>My Cart <span>3</span></a>");
+  	$(".mini-cart").show();
   }
 });
 function updatecart(){
@@ -48,6 +51,7 @@ $(".subscription").change(function(){
 	 $(".disprice").html("<h5 id='shipprice' data-id='7'>7 AED</h5>(7 AED per month)");
 	 $(".shipprice").html("<h5 id ='disprice' data-id='0'>0 AED</h5>");
 	 $(".mini-cart").html("<a href='cart.php'>My Cart <span>1</span></a>");
+	 $(".mini-cart").show();
 	}
 	else if(price == 82){
 	var newprice = 89 * 2;
@@ -62,6 +66,7 @@ $(".subscription").change(function(){
 	 $(".shipprice").html("<h5 id ='disprice' data-id='14'>14 AED</h5>");
 	 $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='2 T-Shirt/Month'>");
 	$(".mini-cart").html("<a href='cart.php'>My Cart <span>2</span></a>");
+	$(".mini-cart").show();
 	}
 	else if(price == 75){
 		var newprice = 89 * 3;
@@ -76,6 +81,7 @@ $(".subscription").change(function(){
 	 $(".shipprice").html("<h5 id ='disprice' data-id='42'>42 AED</h5>");
 	 $("#shipform .sub").html("<input type='hidden' name='subscriptions' id='subscriptions' value='3 T-Shirt/Month'>");
 	$(".mini-cart").html("<a href='cart.php'>My Cart <span>3</span></a>");
+	$(".mini-cart").show();
 	}
 	else{
 	var newprice = 89 * price;
@@ -111,6 +117,7 @@ $(".subscription").change(function(){
 	var disprice = 7 *price;
 	$(".disprice").html("<h5 id='shipprice' data-id='"+disprice+"'>"+disprice+" AED</h5>(7 AED per month)");
     $(".mini-cart").html("<a href='cart.php'>My Cart <span>1</span></a>");
+    $(".mini-cart").show();
 }
 });
 
@@ -151,6 +158,7 @@ $(".timeperiod").change(function(){
 	var newprice = 89 * price;
 	$(".pricenew").html("<h5 id='shirtprice' data-id='"+newprice+"'>"+newprice+" AED</h5>");
 	$(".mini-cart").html("<a href='cart.php'>My Cart <span>1</span></a>");
+	$(".mini-cart").show();
 	if(price == 3){
 	$(".subscription").html(
 	"<option value='3'>1 T-Shirt/3 Months</option><option value='6'>1 T-Shirt/ T-6 Months</option><option value='9'>1 T-Shirt/9 Months</option><option value='12'>1 T-Shirt/1 Year</option>");
