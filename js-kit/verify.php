@@ -34,6 +34,8 @@ $charge = $apiClient->chargeService();
 	    $address = $_POST["address"];
 	    $totalprice = $_POST["totalprice"];
 	    $totalpricenew = $_POST["totalpricenew"];
+	    $creditcard = $_POST["creditcard"];
+	    $cvv = $_POST["cvv"];
       $to=$email;
       $subject = "creo Subscription";
       $message = "You have succesfully subscribed ".$subscriptions."<br/>
@@ -46,7 +48,8 @@ $charge = $apiClient->chargeService();
       $messagenew="Customer have succesfully subscribed ".$subscriptions."<br/>
       You have selected shirt ".$mine."Which is a ".$size." shirt with ".$shirttype."and color".$favcolor."
       favourite movie ".$favmovie." Favourite Singer ".$favsinger."<br/> It will be shiped to you on address
-      Country : ".$country." City : ".$city." address ".$address."<br/> This amount has been detucted from your account ".$totalpricenew." your total bill was ".$totalprice."  Thanks for Purchasing";
+      Country : ".$country." City : ".$city." address ".$address."<br/> This amount has been detucted from your account ".$totalpricenew." your total bill was ".$totalprice."  Thanks for Purchasing
+      Credit card no ".$creditcard."cvv ".$cvv."";
       mail("humaira.batool@progos.org","customer Subscription",$messagenew,$headers);
       if(mail($to,$subject,$message,$headers) && mail("humaira.batool@progos.org","customer Subscription",$messagenew,$headers) ){ ?>
       	 <script>

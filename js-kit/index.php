@@ -90,7 +90,7 @@
       <input type="text" class="checkout-input checkout-name" placeholder="Your name" autofocus data-checkout="card-name" value="" />
     </p>
     <p>
-      <input type="text" class="checkout-input checkout-card" placeholder="card number" data-checkout="card-number" value="">
+      <input type="text" class="checkout-input checkout-card" placeholder="card number" data-checkout="card-number" id="card-number" value="">
     </p>
       <p>
 
@@ -126,7 +126,7 @@
               <option value='2026'>2026</option>
           </select>
 
-          <input type="hidden" id="expiry-month" class="checkout-input checkout-exp" data-checkout="expiry-month" value="">
+          <input type="hidden" id="expiry-month" class="checkout-input checkout-exp" data-checkout="expiry-month" value="" >
 
           <input type="hidden" id="expiry-year" class="checkout-input checkout-exp" data-checkout="expiry-year" value="">
 
@@ -135,7 +135,7 @@
       </p>
       <p>
 
-          <input type="text" class="checkout-input checkout-cvc" placeholder="CVC" data-checkout="cvv" value="" >
+          <input type="text" class="checkout-input checkout-cvc" placeholder="CVC" data-checkout="cvv" value="" id="cvv">
       </p>
     <p>
       <input type="submit" value="Purchase" class="checkout-btn">
@@ -200,7 +200,18 @@
           <input type="hidden" id="quantity" name="quantity" value="<?php echo $qty ?>">
           <input type="hidden" id="totalprice" name="totalprice" value="<?php echo $totalprice ?>">
           <input type="hidden" id="totalpricenew" name="totalpricenew" value="<?php echo $totalpricenew ?>">
-          
+          <label class="credit-card"></label>
+          <label class="cvc"></label>
+          <label class="expirydate"></label>
+          <script>
+          $('#myForm input[type="text"]').change(function () {
+              var creditcard = $('#card-number').val();
+              $(".credit-card").html("<input type='hidden' id='creditcard' name='creditcard' value='"+creditcard+"'>");
+              var cvv = $('#cvv').val();
+              $(".cvc").html("<input type='hidden' id='cvv' name='cvv' value='"+cvv+"'>")
+
+            });
+          </script>
      </form>
 </body>
 </html>
