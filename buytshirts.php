@@ -383,12 +383,14 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
+
 							<input type="radio" name="giftwrapping" value="no" placeholder="">
 							<span>NAH!</span>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
+
 							<input type="radio" name="giftwrapping" value="yes">
 							<span>YA!</span>
 						</label>
