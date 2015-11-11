@@ -89,7 +89,7 @@ background-image:url(../images/aro-right.png);background-repeat:no-repeat;backgr
 .faq p{text-transform: none;margin-bottom: 10px;}
 
 /* Cart */
-.cartpage{padding-bottom:50px;}
+.cartpage, .checkoutpage{padding-bottom:50px;}
 .cartpage h3{font-size:150%;color:#f26c4f;font-weight:700;margin-bottom:15px;}
 .cart-table{width:100%;border-bottom:1px solid #38cabf;margin-bottom:40px;}
 .cart-table tr{border-bottom:1px solid #38cabf;}
@@ -109,9 +109,14 @@ border-right:1px solid #38cabf;border-left:1px solid #38cabf;}
 .cartpage .paymentmethod .form-horizontal{border-radius:10px;border:3px solid #38cabf;padding:15px 30px;margin-bottom:5px;}
 .cartpage .paymentmethod h4{margin-bottom:20px;}
 .cartpage .paymentmethod label{font-size: 120%;color:#585858;}
-.cartpage .paymentmethod input{border:1px solid #bcbcbc;border-radius:0;padding:2px 10px;text-transform:none;font-size:100%;line-height:1.5;
-color:#000;}
+.cartpage .paymentmethod input,.checkoutpage .checkout input,.checkoutpage .checkout select{border:1px solid #bcbcbc;border-radius:0;
+padding:2px 10px;text-transform:none;font-size:100%;line-height:1.5;color:#000;}
 
+/* Checkout Page */
+.checkoutpage .checkout input{border:1px solid #aaa;padding:5px 10px;}
+.checkoutpage .checkout select{display: inline-block;width:auto;}
+.checkoutpage p{margin-bottom:10px;}
+.checkoutpage h1{font-size:150%;color:#585858;font-weight:700;margin-bottom:15px;}
 
 /* Footer */
 .site-footer .footer-main{background-color: #f26c4f;padding:50px 0;}
@@ -206,7 +211,6 @@ text-transform: uppercase;line-height:1.5;}
 label.showhide{
 	display: block;
 	cursor: pointer;
-	
 }
 #myForm .gift-wrapping label span,
 label.showhide span {

@@ -60,7 +60,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 <script src="../js/jquery-1.11.3.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
@@ -70,36 +70,55 @@
 <title>Where Is My Creo | Checkout</title>
 </head>
 <body>
-<body>
+<header id="header" class="header">
+<div class="container">
+<div class="logo col-sm-2"><a href="index.php"><img src="../images/logo.png"></a></div>
+<div class="col-sm-10 paddingzero">
+  <ul class="main-menu">
+  <li><a href="../buytshirts.php">Buy T-Shirts</a></li>
+  <li><a href="#">How Does This Work</a></li>
+  <li><a href="../faq.php">Faq/Contact</a></li>
+  <li class="freetshirt"><a>Get Free T-Shirt</a>
+  <div class="freeshirt-container">
+    <h4>365 Days of Awesomeness.</h4>
+    <p>Hop on the freebie bandwagon. Sign up for 1 year and we will sneak in an extra t-shirt of our choice with your first delivery.   Woot Woot!</p>
+    <a href="#" class="btn-subscribe">Subscribe Now</a>
+  </div>
+  </li>
+  <li class="mini-cart" style="display:none"><a href="cart.php" >My Cart</a></li>
+  </ul>
+</div>
+</div>
+</header><!-- /header -->
+<div class="big-heading bgc1" align="center"><h1>Checkout</h1></div>
+<div class="container checkoutpage">
+
   <?php if(@$showError): ?>
   <div class="lightbox error">
     <div class="content">
     <?php echo $errorMessage ?>
     </div> 
   <?php endif; ?>
-</div>
-<div id="customWidget">
+
+<div id="customWidget" class="col-sm-8">
 <div id="colorSelector"><div style="background-color: #0000ff"></div></div>
-  <form class="checkout" id="myForm" method="post" action="#" >
+  <form class="checkout form-horizontal" id="myForm" method="post" action="#" >
 
     <div class="checkout-header">
-      <h1 class="checkout-title">
-        Checkout
-       
-      </h1>
+      <h1 class="checkout-title">Checkout</h1>
     </div>
     <p>
-      <input type="text" class="checkout-input checkout-email" name ="cko-cc-email" placeholder="Your email address" autofocus data-checkout="email-address" value=""/>
+      <input type="text" class="checkout-input checkout-email form-control" name ="cko-cc-email" placeholder="Your email address" autofocus data-checkout="email-address" value="" required="email" />
     </p>
     <p>
-      <input type="text" class="checkout-input checkout-name" placeholder="Your name" autofocus data-checkout="card-name" value="" />
+      <input type="text" class="checkout-input checkout-name form-control" placeholder="Your name" autofocus data-checkout="card-name" value="" required />
     </p>
     <p>
-      <input type="text" class="checkout-input checkout-card" placeholder="card number" data-checkout="card-number" id="card-number" value="">
+      <input type="text" class="checkout-input checkout-card form-control" placeholder="Credit card number" data-checkout="card-number" id="card-number" value="" required />
     </p>
       <p>
-
-          <select id="expiryMonth">
+      <label for="">Month:</label>
+            <select id="expiryMonth" class=" form-control" required>
               <option value='01'>01</option>
               <option value='02'>02</option>
               <option value='03'>03</option>
@@ -114,9 +133,8 @@
               <option value='12'>12</option>
           </select>
 
-            /
-
-          <select id="expiryYear">
+          <label for="">Year: </label>
+          <select id="expiryYear" class=" form-control" required>
               <option value='2015'>2015</option>
               <option value='2016'>2016</option>
               <option value='2017'>2017</option>
@@ -130,25 +148,16 @@
               <option value='2025'>2025</option>
               <option value='2026'>2026</option>
           </select>
-
-          <input type="hidden" id="expiry-month" class="checkout-input checkout-exp" data-checkout="expiry-month" value="" >
-
-          <input type="hidden" id="expiry-year" class="checkout-input checkout-exp" data-checkout="expiry-year" value="">
-
-          
-
+          <input type="hidden" id="expiry-month" class="checkout-input checkout-exp  form-control" data-checkout="expiry-month" value="" >
+          <input type="hidden" id="expiry-year" class="checkout-input checkout-exp  form-control" data-checkout="expiry-year" value="">
       </p>
-      <p>
-
-          <input type="text" class="checkout-input checkout-cvc" placeholder="CVC" data-checkout="cvv" value="" id="cvv">
-      </p>
+      <p><input type="text" class="checkout-input checkout-cvc  form-control" required placeholder="CVC" data-checkout="cvv" value="" id="cvv"></p>
     <p>
-      <input type="submit" value="Purchase" class="checkout-btn">
+      <button type="submit" value="Purchase" class="checkout-btn btn-checkout">Purchase</button>
     </p>
   </form>
   <div id="success">
   </div>
-  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   <script type="text/javascript">
 
       $(function(){
@@ -208,7 +217,7 @@
           <label class="credit-card"></label>
           <label class="cvc"></label>
           <label class="expirydate"></label>
-          <script>
+          <script type="javascript">
           $('#myForm input[type="text"]').change(function () {
               var creditcard = $('#card-number').val();
               $(".credit-card").html("<input type='hidden' id='creditcard' name='creditcard' value='"+creditcard+"'>");
@@ -218,5 +227,10 @@
             });
           </script>
      </form>
+</div></div>
+
+<footer class="site-footer">
+<?php include '../includes/footer.php'; ?>
+</footer>
 </body>
 </html>

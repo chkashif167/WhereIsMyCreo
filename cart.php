@@ -230,7 +230,7 @@ $giftwrapping = $_POST["giftwrapping"];
 	<tr class="totals">
 	  <td rowspan="2">
 		<button type="" class="btn-cart-alt" onclick="updatecart()">Update Cart</button>
-		<button type="" class="btn-cart">Proceed to checkout</button>	</td>
+		<!-- <button type="" class="btn-cart">Proceed to checkout</button> -->	</td>
 		
 	  <td align="right"><h4>Discount:</h4></td>
 	 <?php if($payOnce == 89):?>
@@ -310,6 +310,10 @@ $giftwrapping = $_POST["giftwrapping"];
 
 	<div class="form-horizontal">
 	<h4>Shipping Address</h4>
+	  <div class="form-group">
+	  <div class="col-sm-4"><label for="fullname">Full Name</label></div>
+	  <div class="col-sm-8"><input type="text" class="form-control" name="fullname" id="fullname" required></div>
+	  </div>
 	  <div class="form-group">
 	  <div class="col-sm-4"><label for="country">Country</label></div>
 	  <div class="col-sm-8"><input type="text" class="form-control" name="country" id="country" required></div>
