@@ -15,7 +15,9 @@ $charge = $apiClient->chargeService();
       $responce = $ChargeResponse->getResponseMessage ();
     ?>
       <script>
-        window.location.href = "http://localhost/Whereismycreo/index.php?sucess=<?php echo $responce ?>";
+        // console.log(getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1]);
+        // exit;
+        window.location.href = "http://elephantationlabs.com/Whereismycreo/Whereismycreo/index.php?sucess=<?php echo $responce ?>";
       </script>
       <?php
         
