@@ -3,16 +3,23 @@ namespace com\checkout;
 
 include 'checkout-php-library/autoload.php';
 
-$apiClient = new ApiClient('sk_test_f89deda7-f8df-4fe0-88af-0027b863a345','sandbox');
+$apiClient = new ApiClient('sk_103764da-6f8b-443d-8bef-66454522b6b0','live');
 // create a charge serive
 $charge = $apiClient->chargeService();
 
   try {
       /**  @var ResponseModels\Charge  $ChargeRespons **/
       $ChargeResponse = $charge->verifyCharge($_POST['cko-payment-token']);
-
-      echo '<pre>';
-      //print_r($ChargeResponse);
+      $status = $ChargeResponse->getStatus();
+      if($status == "Declined"):
+      $responce = $ChargeResponse->getResponseMessage ();
+    ?>
+      <script>
+        window.location.href = "http://localhost/Whereismycreo/index.php?sucess=<?php echo $responce ?>";
+      </script>
+      <?php
+        
+      else:
 	    $mine = $_POST["mine"]; 
 	    if($mine == "mine"):
 	    	$mine = "for Yourself";
@@ -35,7 +42,6 @@ $charge = $apiClient->chargeService();
 	    $totalprice = $_POST["totalprice"];
 	    $totalpricenew = $_POST["totalpricenew"];
 	    $creditcard = $_POST["creditcard"];
-	    $cvv = $_POST["cvv"];
       $to=$email;
       $subject = "creo Subscription";
       $message = "You have succesfully subscribed ".$subscriptions."<br/>
@@ -56,7 +62,7 @@ $charge = $apiClient->chargeService();
       	 window.location.href = "http://elephantationlabs.com/Whereismycreo/Whereismycreo/index.php?sucess=1";
       	 </script>
       <?php }
-
+   endif;
   }catch (Exception $e) {
        echo 'Caught exception: ',  $e->getMessage(), "\n";
   }

@@ -102,7 +102,7 @@
 
 <div id="customWidget" class="col-sm-8">
 <div id="colorSelector"><div style="background-color: #0000ff"></div></div>
-  <form class="checkout form-horizontal" id="myForm" method="post" action="#" >
+  <form class="checkout form-horizontal" id="myForm"  method="post" action="#" >
 
     <div class="checkout-header">
       <h1 class="checkout-title">Checkout</h1>
@@ -195,7 +195,7 @@
 
    
     </script>
-    <script  type="text/javascript" src="//sandbox.checkout.com/js/v1/checkoutkit.js" id="cko_script_tag" async data-namespace="CKOAPI" defer></script>
+    <script  type="text/javascript" src="https://cdn.checkout.com/js/checkoutkit.js" id="cko_script_tag" async data-namespace="CKOAPI" defer></script>
      <form class="" id="myForm2" method="post" action="verify.php" >
         <input type="hidden" class="cko-payment-token" name="cko-payment-token" value="<?php echo $token ;?>" >
         <input type="hidden" id="size" name="size" value="<?php echo $size ?>">
@@ -221,8 +221,6 @@
           $('#myForm input[type="text"]').change(function () {
               var creditcard = $('#card-number').val();
               $(".credit-card").html("<input type='hidden' id='creditcard' name='creditcard' value='"+creditcard+"'>");
-              var cvv = $('#cvv').val();
-              $(".cvc").html("<input type='hidden' id='cvv' name='cvv' value='"+cvv+"'>")
 
             });
           </script>

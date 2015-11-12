@@ -11,8 +11,8 @@ namespace com\checkout\helpers
 		private $_clientVersion = 1.0;
 		private $_defaultContentType = 'JSON';
 		private $_readTimeout = '60';
-		private $_mode = 'sandbox';
-		private  $_baseApiUri = "https://sandbox.checkout.com/v2/";
+		private $_mode = 'live';
+		private  $_baseApiUri = "https://api2.checkout.com/v2";
 
 
 

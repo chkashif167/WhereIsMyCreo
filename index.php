@@ -7,17 +7,24 @@
 </head>
 <body>
 <header id="header" class="header">
-<?php include 'includes/header.php'; ?>
-</header>
-<?php include 'includes/banner-home.php'; ?>
-<!-- /header -->
-
 <div class="container-fluid">
+
+<?php include 'includes/header.php'; ?>
+
+</header>
 <?php if ( isset($_GET['sucess']) && $_GET['sucess'] == 1 )
 {
      // treat the succes case ex:
      echo "<p>You have subscribed the subscription</p>";
-}?>
+}
+elseif(isset($_GET['sucess'])){
+    $suc = $_GET['sucess'];
+    echo "<p>".$suc."</p>";
+	}?>
+<?php include 'includes/banner-home.php'; ?>
+<!-- /header -->
+
+
 
 <div class="row">
 	<div class="slider">

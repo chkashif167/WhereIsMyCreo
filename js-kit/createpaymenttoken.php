@@ -37,7 +37,7 @@ $shippingDetails->setPhone($phone);
 $tokenPayload->setTrackId("trak01254");
 $tokenPayload->setUdf1("test");
 
-$products = array($product0,$product1,$product2);
+$products = array($product0);
 foreach($products as $id => $product){
   $tokenPayload->setProducts($product);
 }

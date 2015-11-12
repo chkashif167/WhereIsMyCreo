@@ -43,7 +43,7 @@ class ApiClient
 
 
 
-	public function __construct($secretKey, $env = 'sandbox' ,$debugMode = false, $connectTimeout = 60, $readTimeout =
+	public function __construct($secretKey, $env = 'live' ,$debugMode = false, $connectTimeout = 60, $readTimeout =
 	60)
 	{
 		$appSetting = helpers\AppSetting::getSingletonInstance();
