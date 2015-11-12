@@ -383,18 +383,18 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-
-							<input type="radio" name="giftwrapping" value="no" placeholder="">
-							<span>NAH!</span>
+							<input type="radio" name="giftwrapping" value="yes">
+							<span>I want to take a picture and show my friends</span>
+							<i class="tag"><b>5 AED</b></i>
 						</label>
 					</div>
 					<div class="col-sm-6">
 						<label class="gift-wrapping">
-
-							<input type="radio" name="giftwrapping" value="yes">
-							<span>YA!</span>
+							<input type="radio" name="giftwrapping" value="no" placeholder="">
+							<span>no wrapping im a busy person</span>
 						</label>
 					</div>
+
 				</div>
 			</div>
 			<div class="giftwrapping-error error" style="display:none"><p>Please Select one of the options</p></div>
