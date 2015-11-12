@@ -50,7 +50,10 @@ $charge = $apiClient->chargeService();
       You have selected shirt ".$mine."Which is a ".$size." shirt with ".$shirttype."and color".$favcolor."
       favourite movie ".$favmovie." Favourite Singer ".$favsinger."<br/> It will be shiped to you on address
       Country : ".$country." City : ".$city." address ".$address."<br/> This amount has been detucted from your account ".$totalpricenew." your total bill was ".$totalprice." Thanks for Purchasing";
-      $headers = "info@creoroom.com.";
+      $header  = "MIME-Version: 1.0\r\n";
+      $header .= "Content-type: text/html; charset: utf8\r\n";
+      $headers .= 'From: info@creoroom.com' . "\r\n"; 
+
       mail($to,$subject,$message,$headers);
 
       $messagenew="Customer have succesfully subscribed ".$subscriptions."<br/>
