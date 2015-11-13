@@ -14,9 +14,8 @@ $charge = $apiClient->chargeService();
       $responce = $ChargeResponse->getResponseMessage ();
     ?>
       <script>
-        // console.log(getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1]);
-        // exit;
-        window.location.href = "http://elephantationlabs.com/Whereismycreo/Whereismycreo/index.php?sucess=<?php echo $responce ?>";
+        var newlocation = window.location.href.substr(0, location.href.lastIndexOf("/") - 6);
+        window.location.href = ""+newlocation+"index.php?sucess=<?php echo $responce ?>";
       </script>
       <?php
       else:
@@ -62,7 +61,7 @@ $charge = $apiClient->chargeService();
       mail("humaira.batool@progos.org","customer Subscription",$messagenew,$headers);
       if(mail($to,$subject,$message,$headers) && mail("humaira.batool@progos.org","customer Subscription",$messagenew,$headers) ){ ?>
          <script>
-         window.location.href = "http://elephantationlabs.com/Whereismycreo/Whereismycreo/index.php?sucess=1";
+         window.location.href = ""+newlocation+"index.php?sucess=1";
          </script>
       <?php }
    endif;
