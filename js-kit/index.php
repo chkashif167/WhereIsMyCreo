@@ -41,7 +41,7 @@
     elseif($count == 4):
     $totalpricenew = str_pad($totalpricenew,6,"0");
     endif;
-    //echo $totalpricenew; 
+     
     $country = $_POST["country"];
     $city = $_POST["city"];
     $mobile = $_POST["mobile"];
