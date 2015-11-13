@@ -9,7 +9,7 @@
 	<div class="freeshirt-container">
 		<h4>365 Days of Awesomeness.</h4>
 		<p>Hop on the freebie bandwagon. Sign up for 1 year and we will sneak in an extra t-shirt of our choice with your first delivery.   Woot Woot!</p>
-		<a href="#" class="btn-subscribe">Subscribe Now</a>
+		<a href="buytshirts.php" class="btn-subscribe">Subscribe Now</a>
 	</div>
 	</li>
 	<li class="mini-cart" style="display:none"><a href="cart.php" >My Cart</a></li>
