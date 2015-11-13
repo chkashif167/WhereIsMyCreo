@@ -44,7 +44,7 @@ foreach($products as $id => $product){
 $tokenPayload->setCurrency("AED");
 $tokenPayload->setAutoCapture("Y");
 $tokenPayload->setAutoCapTime(0.0);
-$tokenPayload->setValue("100");
+$tokenPayload->setValue($totalpricenew);
 $tokenPayload->setCustomerIp("88.216.3.135");
 $tokenPayload->setDescription("test");
 $tokenPayload->setEmail("test@test.com");
